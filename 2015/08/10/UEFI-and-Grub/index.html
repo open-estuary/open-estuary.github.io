@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>UEFI and Grub | Open-Estuary</title>
+  <meta name="description" content="Open-Estuary Community Boards Support Site" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="/css/jq-metro.css" />
+  <meta name="generator" content="Open-Estuary">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Overview-Introduction/">Overview Introduction</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Quick-Start/">Quick Start</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Go-Through/">Go Through</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Binary-Files/">Binary Files</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Shared-Boards-in-Open-Lab/">Shared Boards in Open Lab</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Caliper-for-Benchmarking/">Caliper for Benchmarking</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/UEFI-and-Grub/">UEFI and Grub</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Hardware-Boards/">Hardware Boards</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/08/10/Armor-Tools/">Armor Tools</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/17/D02/">D02-hacking-manual</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/23/D01/">D01-hacking-manual</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Armor-Tools/">&nbsp;&nbsp;&nbsp;Armor Tools</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Binary-Files/">&nbsp;&nbsp;&nbsp;Binary Files</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Caliper-for-Benchmarking/">&nbsp;&nbsp;&nbsp;Caliper for Benchmarking</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/D01/">&nbsp;&nbsp;&nbsp;D01</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/D02/">&nbsp;&nbsp;&nbsp;D02</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Go-Through/">&nbsp;&nbsp;&nbsp;Go Through</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Hardware-Boards/">&nbsp;&nbsp;&nbsp;Hardware Boards</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Overview-Introduction/">&nbsp;&nbsp;&nbsp;Overview Introduction</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Quick-Start/">&nbsp;&nbsp;&nbsp;Quick Start</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Shared-Boards-in-Open-Lab/">&nbsp;&nbsp;&nbsp;Shared Boards in Open Lab</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/UEFI-and-Grub/">&nbsp;&nbsp;&nbsp;UEFI and Grub</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-user" href="http://www.open-estuary.io">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/open-estuary">&nbsp;&nbsp;&nbsp;Github</a></li>
+                    <li><a class="fa fa-bullhorn" href="https://github.com/open-estuary/open-estuary.github.io/issues">&nbsp;&nbsp;&nbsp;Issue Report</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/08/10/Overview-Introduction/">Overview Introduction</a>
+                
+                    <a  data-pjax href="/2015/08/10/Quick-Start/">Quick Start</a>
+                
+                    <a  data-pjax href="/2015/08/10/Go-Through/">Go Through</a>
+                
+                    <a  data-pjax href="/2015/08/10/Binary-Files/">Binary Files</a>
+                
+                    <a  data-pjax href="/2015/08/10/Shared-Boards-in-Open-Lab/">Shared Boards in Open Lab</a>
+                
+                    <a  data-pjax href="/2015/08/10/Caliper-for-Benchmarking/">Caliper for Benchmarking</a>
+                
+                    <a  data-pjax href="/2015/08/10/UEFI-and-Grub/">UEFI and Grub</a>
+                
+                    <a  data-pjax href="/2015/08/10/Hardware-Boards/">Hardware Boards</a>
+                
+                    <a  data-pjax href="/2015/08/10/Armor-Tools/">Armor Tools</a>
+                
+                    <a  data-pjax href="/2015/04/17/D02/">D02-hacking-manual</a>
+                
+                    <a  data-pjax href="/2014/12/23/D01/">D01-hacking-manual</a>
+                
+                
+                
+                    <a data-pjax href="/tags/Armor-Tools/">&nbsp;&nbsp;Armor Tools</a>
+                
+                    <a data-pjax href="/tags/Binary-Files/">&nbsp;&nbsp;Binary Files</a>
+                
+                    <a data-pjax href="/tags/Caliper-for-Benchmarking/">&nbsp;&nbsp;Caliper for Benchmarking</a>
+                
+                    <a data-pjax href="/tags/D01/">&nbsp;&nbsp;D01</a>
+                
+                    <a data-pjax href="/tags/D02/">&nbsp;&nbsp;D02</a>
+                
+                    <a data-pjax href="/tags/Go-Through/">&nbsp;&nbsp;Go Through</a>
+                
+                    <a data-pjax href="/tags/Hardware-Boards/">&nbsp;&nbsp;Hardware Boards</a>
+                
+                    <a data-pjax href="/tags/Overview-Introduction/">&nbsp;&nbsp;Overview Introduction</a>
+                
+                    <a data-pjax href="/tags/Quick-Start/">&nbsp;&nbsp;Quick Start</a>
+                
+                    <a data-pjax href="/tags/Shared-Boards-in-Open-Lab/">&nbsp;&nbsp;Shared Boards in Open Lab</a>
+                
+                    <a data-pjax href="/tags/UEFI-and-Grub/">&nbsp;&nbsp;UEFI and Grub</a>
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" href="/">Open-Estuary</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">UEFI and Grub</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/UEFI-and-Grub/' style='color:#D5D5D5'>UEFI and Grub</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">UEFI and Grub</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2015-08-10T02:13:18.000Z"
+                              itemprop="datePublished">Aug 10 2015</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <p>Grub is a kind of boot loader to load kernel\OS into RAM and run it, meanwhile UEFI is a kind of BIOS to provide runtime service to OS which can do some basic IO operation with the runtime service, e.g.: reboot, power off and etc.</p>
+<h3 id="Get_them">Get them</h3>
+<p>For the source code of Grub, you can get it by follow:</p>
+<pre><code>git <span class="keyword">clone</span> git:<span class="comment">//git.savannah.gnu.org/grub.git</span>
+</code></pre><p>For the source code of UEFI, you can get it by follow:</p>
+<pre><code>git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/UEFI.git
+</code></pre><p>For binaries mentioned above, you can get them by follows, more introduction to these binaries, please refer to <a href="/tags/Binary-Files/">Binary Files</a>:</p>
+<pre><code>wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/CH02_TEVBC_V03.bin
+wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/bl1.bin 
+wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/fip.bin
+wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/UEFI_Release.bin 
+wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/grub.cfg
+wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/grubaa64.efi
+</code></pre><h3 id="UEFI_hacking">UEFI hacking</h3>
+<p><strong><em>Note: This step is not necessary unless you want to update UEFI</em></strong></p>
+<p>FTP protocol is used for downloading between hardware boards and local network. So before this step, please make sure you have a working FTP server in local network, so that board could get files from network using FTP.</p>
+<ol>
+<li><p>Prepare files about UEFI on local computer</p>
+<p> There are several files which should be prepared before hacking UEFI: UEFI_Release.bin for BIOS, bl1.bin and fip.bin for Trust Fireware, CH02_TVBC_V03.bin for power control. Then put them on the root directory of FTP.</p>
+</li>
+<li><p>Boot board into UEFI SHELL</p>
+<p> Follow these steps to UEFI SHELL:</p>
+<pre><code> a.Serial port setting:<span class="number">115200</span>/<span class="number">8</span>/N/<span class="number">1</span>;
+ b.Press any <span class="keyword">key</span> <span class="keyword">to</span> enter <span class="keyword">default</span> Boot selection Menu;
+ c.<span class="keyword">Select</span> EBL selection;
+</code></pre><p> Then the board will enter the UEFI SHELL.</p>
+</li>
+<li><p>Update UEFI files</p>
+<ul>
+<li><p>IP address config</p>
+<pre><code>   <span class="title">ifconfig</span> -s eth0 [IP.address] [mask] [gateway]
+   eg. ifconfig -s eth0  <span class="number">192.168.1.4</span> <span class="number">255.255.255.0</span> <span class="number">192.168.1.1</span>
+</code></pre></li>
+<li><p>Burn BIOS file</p>
+<pre><code>   <span class="tag">provision</span> <span class="attr_selector">[server.IP]</span> <span class="tag">-u</span> <span class="attr_selector">[user.name]</span> <span class="tag">-p</span> <span class="attr_selector">[passwd]</span> <span class="tag">-f</span> <span class="attr_selector">[UEFI_Release.bin]</span> <span class="tag">-a</span> <span class="attr_selector">[address]</span>
+   <span class="tag">spiwfmem</span> <span class="attr_selector">[source address]</span> <span class="attr_selector">[offset]</span> <span class="attr_selector">[data length]</span>
+   <span class="tag">eg</span>. <span class="tag">provision</span> 192<span class="class">.168</span><span class="class">.1</span><span class="class">.107</span> <span class="tag">-u</span> <span class="tag">sch</span> <span class="tag">-p</span> <span class="tag">aaa</span> <span class="tag">-f</span> <span class="tag">UEFI_Release</span><span class="class">.bin</span> <span class="tag">-a</span> 100000
+   <span class="tag">spiwfmem</span> 100000 0000000 300000
+</code></pre></li>
+<li><p>Burn CPLD file</p>
+<pre><code>   <span class="tag">provision</span> <span class="attr_selector">[server.IP]</span> <span class="tag">-u</span> <span class="attr_selector">[user.name]</span> <span class="tag">-p</span> <span class="attr_selector">[passwd]</span> <span class="tag">-f</span> <span class="attr_selector">[cpld.bin]</span> <span class="tag">-a</span> <span class="attr_selector">[address]</span>
+   <span class="tag">updatecpld</span> <span class="attr_selector">[address]</span>
+   <span class="tag">eg</span>. <span class="tag">provision</span> 192<span class="class">.168</span><span class="class">.1</span><span class="class">.107</span> <span class="tag">-u</span> <span class="tag">sch</span> <span class="tag">-p</span> <span class="tag">aaa</span> <span class="tag">-f</span> <span class="tag">CH02_TEVBC_V03</span><span class="class">.bin</span> <span class="tag">-a</span> 100000
+   <span class="tag">updatecpld</span> 100000
+</code></pre></li>
+<li><p>Burn files for Trust Firmware(this step is not necessary when the format of UEFI is end of <strong>fd</strong> which is consist of trusted firmware and uefi) </p>
+<pre><code>   <span class="tag">provision</span> <span class="attr_selector">[server.IP]</span> <span class="tag">-u</span> <span class="attr_selector">[user.name]</span> <span class="tag">-p</span> <span class="attr_selector">[passwd]</span> <span class="tag">-f</span> <span class="tag">bl1</span><span class="class">.bin</span> <span class="tag">-a</span> <span class="attr_selector">[address]</span>
+   <span class="tag">spiwfmem</span> <span class="attr_selector">[source address]</span> <span class="attr_selector">[offset]</span> <span class="attr_selector">[data length]</span>
+   <span class="tag">provision</span> <span class="attr_selector">[server.IP]</span> <span class="tag">-u</span> <span class="attr_selector">[user.name]</span> <span class="tag">-p</span> <span class="attr_selector">[passwd]</span> <span class="tag">-f</span> <span class="tag">fip</span><span class="class">.bin</span> <span class="tag">-a</span> <span class="attr_selector">[address]</span>
+   <span class="tag">spiwfmem</span> <span class="attr_selector">[source address]</span> <span class="attr_selector">[offset]</span> <span class="attr_selector">[data length]</span>
+   <span class="tag">eg</span>. <span class="tag">provision</span> 192<span class="class">.168</span><span class="class">.1</span><span class="class">.107</span> <span class="tag">-u</span> <span class="tag">sch</span> <span class="tag">-p</span> <span class="tag">aaa</span> <span class="tag">-f</span> <span class="tag">bl1</span><span class="class">.bin</span> <span class="tag">-a</span> 100000
+   <span class="tag">spiwfmem</span> 100000 200000 10000
+   <span class="tag">provision</span> 192<span class="class">.168</span><span class="class">.1</span><span class="class">.107</span> <span class="tag">-u</span> <span class="tag">sch</span> <span class="tag">-p</span> <span class="tag">aaa</span> <span class="tag">-f</span> <span class="tag">fip</span><span class="class">.bin</span> <span class="tag">-a</span> 100000
+   <span class="tag">spiwfmem</span> 100000 220000 10000
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<p>Then board must be reset or powered off after this step.</p>
+<h3 id="Recover_the_UEFI_when_it_doesn’t_work">Recover the UEFI when it doesn’t work</h3>
+<p>Actually the board can restore two UEFI in case of failure in the default UEFI.you can resore UEFI in the follow way:</p>
+<ol>
+<li>Power off the board and disconnect power supply.</li>
+<li>Push the dial switch s3 to the side that has silk screen ‘3’, please check <a href="/tags/Hardware-Boards/">Hardware Boards</a> to find where it is.</li>
+<li>Power on and enter UEFI SHELL again.</li>
+<li><p>IP address config</p>
+<p> ifconfig -s eth0 [IP.address] [mask] [gateway]<br>   eg. ifconfig -s eth0  192.168.1.4 255.255.255.0 192.168.1.1</p>
+</li>
+<li><p>Push the dial swift s3 to the other side that has no silk screen ‘s’</p>
+</li>
+<li>Burn UEFI file for BIOS as above step3.</li>
+<li>Reset the system again.</li>
+</ol>
+<p>Now you have already updated your failed BIOS, and the board will enter the UEFI SHELL.</p>
+<h3 id="Config_Grub_file">Config Grub file</h3>
+<p>Grub is used to load the kernel into RAM and start it, normally they are place into bootable partition as following structure. </p>
+<p><img src="http://7xjz0v.com1.z0.glb.clouddn.com/bootarch.jpg" style="width:556px;height:164px;margin-left:30px"></p>
+<p>You can edit the grub.cfg to support various boot mode, follow is an example.</p>
+<pre><code><span class="comment">#</span>
+<span class="comment"># Sample GRUB configuration file</span>
+<span class="comment">#</span>
+
+<span class="comment"># Boot automatically after 0 secs.</span>
+set <span class="variable">timeout=</span><span class="number">5</span>
+
+<span class="comment"># By default, boot the Euler/Linux</span>
+set <span class="variable">default=</span>ubuntu_nfs
+
+<span class="comment"># Booting with ramdisk rootfs by PXE</span>
+menuentry <span class="string">"minilinux"</span> --id minilinux {
+    set <span class="variable">root=</span>(tftp,<span class="number">192.168</span>.<span class="number">1.107</span>)
+    linux /Image <span class="variable">rdinit=</span>/init <span class="variable">crashkernel=</span><span class="number">256</span>M@<span class="number">32</span>M <span class="variable">console=</span>ttyS0,<span class="number">115200</span> <span class="variable">earlycon=</span>uart8250,mmio32,<span class="number">0</span>x80300000 <span class="variable">ip=</span>:::::eth0:dhcp
+    initrd /hulk-hip05.cpio.gz
+    devicetree /hip05-d02.dtb
+}
+
+<span class="comment"># Booting with NFS rootfs by PXE</span>
+menuentry <span class="string">"Ubuntu NFS"</span> --id ubuntu_nfs {
+    set <span class="variable">root=</span>(tftp,<span class="number">192.168</span>.<span class="number">1.107</span>)
+    linux /Image <span class="variable">rdinit=</span>/init <span class="variable">console=</span>ttyS0,<span class="number">115200</span> <span class="variable">earlycon=</span>uart8250,mmio32,<span class="number">0</span>x80300000 <span class="variable">root=</span>/dev/nfs rw <span class="variable">nfsroot=</span><span class="number">192.168</span>.<span class="number">1.107</span>:/home/open-estuary/ftp/user/rootfs_ubuntu64 <span class="variable">ip=</span>:::::eth0:dhcp
+    devicetree /hip05-d02.dtb
+}
+
+<span class="comment"># Booting with SATA rootfs</span>
+menuentry <span class="string">"Ubuntu SATA"</span> --id ubuntu_sata {
+    set <span class="variable">root=</span>(hd1,gpt1)
+    linux /Image <span class="variable">rdinit=</span>/init <span class="variable">root=</span>/dev/sda2 <span class="variable">rootfstype=</span>ext4 rw <span class="variable">console=</span>ttyS0,<span class="number">115200</span> <span class="variable">earlycon=</span>uart8250,mmio32,<span class="number">0</span>x80300000 <span class="variable">ip=</span>:::::eth0:dhcp
+    devicetree /hip05-d02.dtb
+}
+</code></pre><p><strong><em>Note: —id is the name of boot options, Image indicates the name of kernel image, hip05-d02.dtb indicates the name of data tree binary file, hulk-hip05.cpio.gz indicates the name of ramdisk rootfs. You can change their names and locations.</em></strong></p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2015/08/10/Caliper-for-Benchmarking/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2015/08/10/Hardware-Boards/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Open-Estuary 2014-2015</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+
+		
+<script type="text/javascript">
+var currenthref = window.location.href;
+if(currenthref == "http://open-estuary.github.io/" || currenthref == "http://localhost:4000/"){
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254398477'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254398477%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+}
+
+</script>
+
+
+
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/jquery.metro-btn.js"></script>
+
+
+
+
+
+
+</body>
+</html>
