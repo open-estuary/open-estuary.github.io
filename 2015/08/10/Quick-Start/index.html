@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Quick Start | Open-Estuary</title>
+  <title>Estuary QuickStart Guide | Open-Estuary</title>
   <meta name="description" content="Open-Estuary Community Boards Support Site" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -47,7 +47,7 @@
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2015/08/10/Quick-Start/">Quick Start</a>
+                                    <a href="/2015/08/10/Quick-Start/">Estuary QuickStart Guide</a>
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
@@ -193,7 +193,7 @@
                 
                     <a  data-pjax href="/2015/08/10/Overview-Introduction/">Overview Introduction</a>
                 
-                    <a  data-pjax href="/2015/08/10/Quick-Start/">Quick Start</a>
+                    <a  data-pjax href="/2015/08/10/Quick-Start/">Estuary QuickStart Guide</a>
                 
                     <a  data-pjax href="/2015/08/10/Go-Through/">Go Through</a>
                 
@@ -247,7 +247,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">Quick Start</a></li>
+                        <li id="navbar-title"><a href="#">Estuary QuickStart Guide</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -280,7 +280,7 @@
                       
                       
                   </div>
-                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Quick Start</h1>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Estuary QuickStart Guide</h1>
 
                     <div class="post-meta">
                         Post on<span class="fa fa-clock-o"></span>
@@ -290,7 +290,13 @@
     </span>
 
         <section class="post-content">
-            <p>Working on it…</p>
+            <p>Firstly,Download Estuary source code from GitHub.<br>About how to get Estuary source code, please refer to :<br><a href="https://github.com/hisilicon/estuary/blob/master/README" target="_blank" rel="external">https://github.com/hisilicon/estuary/blob/master/README</a></p>
+<p>Create USB installation disk deploying Linux system into Hard Disk of D02 board</p>
+<ol>
+<li>Plug USB Disk to ubuntu machine<br>Execute these command:<br>cd xxx/estuary<br>./create-udisk.sh<br>Afterwards, input selection according to prompt information.<br>At last, USB intallation disk may be created successfully.</li>
+<li>Plug USB Disk to D02 board<br>Switch on the D02 board, select USB startup selection in UEFI shell, and sys_setup.sh will be execute after ubuntu is started up.<br>Afterwards, input selection according to prompt information.<br>At last, the Hard Disk of D02 board may be deployed successfully.</li>
+<li>Switch off the D02 board<br>Unplug USB Disk, switch on the D02 board again, select Hard Disk startup selection in UEFI shell, and linux system can be started up from Hard Disk.</li>
+</ol>
 
         </section>
         <hr/>
