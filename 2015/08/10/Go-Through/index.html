@@ -326,7 +326,8 @@
 <h3 id="_Get\Build_Estuary_yourself_"><span id="build"> Get\Build Estuary yourself </span></h3>
 <p>You can get and build the whole project to get all binaries yourself as follows.</p>
 <p><strong>Firstly, to get the whole project as follows:</strong></p>
-<pre><code><span class="variable">$mkdir</span> -p ~/bin; <span class="built_in">sudo</span> apt-get update; <span class="built_in">sudo</span> apt-get upgrade -y; <span class="built_in">sudo</span> apt-get install -y curl git
+<pre><code><span class="variable">$check</span>
+<span class="variable">$mkdir</span> -p ~/bin; <span class="built_in">sudo</span> apt-get update; <span class="built_in">sudo</span> apt-get upgrade -y; <span class="built_in">sudo</span> apt-get install -y curl git
 <span class="variable">$curl</span> <span class="string">"https://android-git.linaro.org/gitweb?p=tools/repo.git;a=blob_plain;f=repo;hb=refs/heads/stable"</span> &gt; ~/bin/repo
 
 <span class="variable">$chmod</span> a+x ~/bin/repo; <span class="built_in">echo</span> <span class="string">'export PATH=~/bin:$PATH'</span> &gt;&gt; ~/.bashrc; <span class="keyword">export</span> PATH=~/bin:<span class="variable">$PATH</span>
