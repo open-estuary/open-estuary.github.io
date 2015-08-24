@@ -1,7 +1,6 @@
-// touch it
-
 var hasPushstate = !!(window.history && history.pushState);
 // duoshuo load function
+//
 var duoshuoName = 'open-estuary'; // change to your DUOSHUO name
 var duoshuoQuery = {short_name: "open-estuary"}; // change to your duoshuo name
 function toggleDuoshuoComments(container) {
