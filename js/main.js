@@ -402,7 +402,7 @@ $(document).on({
 
 function generateMetroBanner(){
 	if(0 == $("#metro-banner")[0].childElementCount){
-    $("#metro-banner").AddMetroDoubleButton('metro-Quick', 'metro-green', '', 'Quick Start', "location.href=\'/tags/Quick-Start\'");
+    $("#metro-banner").AddMetroDoubleButton('metro-Quickstart', 'metro-green', '', 'Quick Start', "location.href=\'/tags/Quick-Start\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Overview', 'metro-blue', '', 'Overview', "location.href=\'/tags/Overview-Introduction\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Gothrough', 'metro-pink', '', 'Go Through', "location.href=\'/tags/Go-Through\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Binary', 'metro-pink', '', 'Binary', "location.href=\'/tags/Binary-Files\'");
