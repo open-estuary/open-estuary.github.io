@@ -332,9 +332,9 @@
 <span class="variable">$chmod</span> a+x ~/bin/repo; <span class="built_in">echo</span> <span class="string">'export PATH=~/bin:$PATH'</span> &gt;&gt; ~/.bashrc; <span class="keyword">export</span> PATH=~/bin:<span class="variable">$PATH</span>
 
 <span class="variable">$mkdir</span> workdir; <span class="built_in">cd</span> workdir 
-
-<span class="variable">$repo</span> init -u <span class="string">"https://github.com/hisilicon/estuary.git"</span> -b refs/tags/estuary-v1.<span class="number">2</span> --no-repo-verify --repo-url=git://android.git.linaro.org/tools/repo
-<span class="variable">$repo</span> sync
+</code></pre><p>You just need do one time above steps for first getting this project, but all following steps are necessary for each time getting or updating.</p>
+<pre><code>$repo init -<span class="keyword">u</span> <span class="string">"https://github.com/hisilicon/estuary.git"</span> -<span class="keyword">b</span> refs/<span class="keyword">tags</span>/estuary-v1.<span class="number">2</span> --<span class="keyword">no</span>-repo-verify --repo-url=gi<span class="variable">t:</span>//android.git.linaro.org/tools/repo
+$repo <span class="keyword">sync</span>
 </code></pre><p>If the repo sync fails during syncing, you can try it again.</p>
 <p><strong>Secondly, to build the target system as follows:</strong><br><strong><em>Before building, you must change MAC address at 244 line in “arch/arm64/boot/dts/hisilicon/hip05_xge.dtsi” to adapt MAC address set in UEFI</em></strong></p>
 <pre><code>$./estuary/build.sh -p D02 <span class="operator">-d</span> Ubuntu
