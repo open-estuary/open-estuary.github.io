@@ -326,17 +326,14 @@
 <h3 id="_Get\Build_Estuary_yourself_"><span id="build"> Get\Build Estuary yourself </span></h3>
 <p>You can get and build the whole project to get all binaries yourself as follows.</p>
 <p><strong>Firstly, to get the whole project as follows:</strong></p>
-<pre><code><span class="variable">$mkdir</span> -p ~/bin
+<pre><code><span class="variable">$mkdir</span> -p ~/bin; <span class="built_in">sudo</span> apt-get update; <span class="built_in">sudo</span> apt-get install curl
 <span class="variable">$curl</span> <span class="string">"https://android-git.linaro.org/gitweb?p=tools/repo.git;a=blob_plain;f=repo;hb=refs/heads/stable"</span> &gt; ~/bin/repo
 
-<span class="variable">$chmod</span> a+x ~/bin/repo
-<span class="variable">$echo</span> <span class="string">'export PATH=~/bin:$PATH'</span> &gt;&gt; ~/.bashrc
-<span class="variable">$export</span> PATH=~/bin:<span class="variable">$PATH</span>
+<span class="variable">$chmod</span> a+x ~/bin/repo; <span class="built_in">echo</span> <span class="string">'export PATH=~/bin:$PATH'</span> &gt;&gt; ~/.bashrc; <span class="keyword">export</span> PATH=~/bin:<span class="variable">$PATH</span>
 
-<span class="variable">$mkdir</span> workdir
-<span class="variable">$cd</span> workdir 
+<span class="variable">$mkdir</span> workdir; <span class="built_in">cd</span> workdir 
 
-<span class="variable">$repo</span> init -u <span class="string">"https://github.com/hisilicon/estuary.git"</span> -b refs/tags/estuary-v1<span class="number">.2</span> --no-repo-verify --repo-url=git:<span class="comment">//android.git.linaro.org/tools/repo</span>
+<span class="variable">$repo</span> init -u <span class="string">"https://github.com/hisilicon/estuary.git"</span> -b refs/tags/estuary-v1.<span class="number">2</span> --no-repo-verify --repo-url=git://android.git.linaro.org/tools/repo
 <span class="variable">$repo</span> sync
 </code></pre><p>If the repo sync fails during syncing, you can try it again.</p>
 <p><strong>Secondly, to build the target system as follows:</strong><br><strong><em>Before building, you must change MAC address at 244 line in “arch/arm64/boot/dts/hisilicon/hip05_xge.dtsi” to adapt MAC address set in UEFI</em></strong></p>
