@@ -291,9 +291,9 @@
 
         <section class="post-content">
             <p>You can have a quick trying with all binaries, which can be downloaded from following link:</p>
-<pre><code>http<span class="variable">s:</span>//github.<span class="keyword">com</span>/hisilicon/estuary/releases
+<pre><code>http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases
 </code></pre><p>Here, you can click the ‘Latest release’ on left of page firstly, then download any files in the version as you like.</p>
-<pre><code>e.g.<span class="symbol">:</span> wget -c <span class="symbol">https:</span>/<span class="regexp">/github.com/hisilicon</span><span class="regexp">/estuary/releases</span><span class="regexp">/download/bin</span>-v1.<span class="number">2</span>/<span class="constant">Image</span>
+<pre><code><span class="attribute">e.g.</span>: <span class="string">wget -c https://github.com/open-estuary/estuary/releases/download/bin-v1.2/Image</span>
 </code></pre><p>All binaries and their descriptions are listed as follows, how to use these binaries, please refer to <a href="/tags/System-Hacking/">System Hacking</a>:</p>
 <pre><code><span class="code">+----------------------------+</span>------------------------------------+       
 |  FILE NAME                 |    DESCRIPTION                     |
@@ -321,13 +321,13 @@
 <span class="code">+----------------------------+</span>------------------------------------+              
 </code></pre><h3 id="_The_function_of_each_component"><span id="function"> The function of each component</span></h3>
 <p>1.<span id="UEFI">UEFI</span>:responsible for loading and booting Image and dtb file,and you could download binary file from:</p>
-<pre><code>wget -c <span class="symbol">https:</span>/<span class="regexp">/github.com/hisilicon</span><span class="regexp">/estuary/releases</span><span class="regexp">/download/bin</span>-v1.<span class="number">2</span>/<span class="constant">UEFI_Release</span>.bin 
+<pre><code>wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/UEFI_Release.bin 
 </code></pre><p>2.<span id="GRUB">GRUB</span>:grub configure file and grub image file for D02,and you could download binary file from:</p>
-<pre><code>wget -c <span class="symbol">https:</span>/<span class="regexp">/github.com/hisilicon</span><span class="regexp">/estuary/releases</span><span class="regexp">/download/bin</span>-v1.<span class="number">2</span>/grub.cfg
-wget -c <span class="symbol">https:</span>/<span class="regexp">/github.com/hisilicon</span><span class="regexp">/estuary/releases</span><span class="regexp">/download/bin</span>-v1.<span class="number">2</span>/grubaa64.efi
+<pre><code>wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/grub.cfg
+wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/grubaa64.efi
 </code></pre><p>3.<span id="kernel">Kernel</span>:the operation system that D02 runs on,and you could binary files from following website:</p>
-<pre><code>wget -c <span class="symbol">https:</span>/<span class="regexp">/github.com/hisilicon</span><span class="regexp">/estuary/releases</span><span class="regexp">/download/bin</span>-v1.<span class="number">2</span>/<span class="constant">Image</span>
-wget -c <span class="symbol">https:</span>/<span class="regexp">/github.com/hisilicon</span><span class="regexp">/estuary/releases</span><span class="regexp">/download/bin</span>-v1.<span class="number">2</span>/hip05-d02.dtb
+<pre><code>wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/Image
+wget -<span class="keyword">c</span> http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/estuary/releases/download/bin-v1.<span class="number">2</span>/hip05-d02.dtb
 </code></pre><p>4.<span id="dist">Linux Distribution</span>: Because the distribution’s Images are too large, all of them are storaged into another place. The validated distributions for this project’s boards can be downloaded from following website, the default <strong>user name and passowrd</strong> of distributions are: <strong>root, root</strong>.</p>
 <pre><code><span class="attribute">Ubuntu</span>: <span class="string">    wget -c http://7xjz0v.com1.z0.glb.clouddn.com/dist/ubuntu-vivid.img.tar.gz</span>
 <span class="attribute">OpenSUSE</span>: <span class="string">  wget -c http://7xjz0v.com1.z0.glb.clouddn.com/dist/opensuse.img.tar.gz</span>

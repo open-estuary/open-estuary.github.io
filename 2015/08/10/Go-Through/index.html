@@ -333,7 +333,7 @@
 
 <span class="variable">$mkdir</span> workdir; <span class="built_in">cd</span> workdir 
 </code></pre><p>You just need do one time above steps for first getting this project, but all following steps are necessary for each time getting or updating.</p>
-<pre><code>$repo init -<span class="keyword">u</span> <span class="string">"https://github.com/hisilicon/estuary.git"</span> -<span class="keyword">b</span> refs/<span class="keyword">tags</span>/estuary-v1.<span class="number">2</span> --<span class="keyword">no</span>-repo-verify --repo-url=gi<span class="variable">t:</span>//android.git.linaro.org/tools/repo
+<pre><code>$repo init -<span class="keyword">u</span> <span class="string">"https://github.com/open-estuary/estuary.git"</span> --<span class="keyword">no</span>-repo-verify --repo-url=gi<span class="variable">t:</span>//android.git.linaro.org/tools/repo
 $repo <span class="keyword">sync</span>
 </code></pre><p>If the repo sync fails during syncing, you can try it again.</p>
 <p><strong>Secondly, to build the target system as follows:</strong><br><strong><em>Before building, you must change MAC address at 244 line in “arch/arm64/boot/dts/hisilicon/hip05_xge.dtsi” to adapt MAC address set in UEFI</em></strong></p>
@@ -345,7 +345,7 @@ $repo <span class="keyword">sync</span>
 <h3 id="_Only_build_kernel_"><span id="kernel"> Only build kernel </span></h3>
 <p>You can do as follows, if you only want to rebuild kernel.</p>
 <p>1.Clone the latest kernel source code with following command.</p>
-<pre><code>git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/hisilicon/linaro-kernel.git -<span class="keyword">b</span> estuary
+<pre><code>git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/<span class="keyword">open</span>-estuary/kernel.git
 </code></pre><p>2.Install tool chain from <a href="http://releases.linaro.org/14.09/components/toolchain/" target="_blank" rel="external">Linaro Tool Chain</a></p>
 <p>3.Build steps as follow:</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">export</span> ARCH=arm64</div><div class="line"><span class="keyword">export</span> CROSS_COMPILE=aarch64-linux-gnu-</div><div class="line">make defconfig</div><div class="line">make -j16</div><div class="line">make ./hisilicon/hip05<span class="operator">-d</span>02.dtb</div></pre></td></tr></table></figure>
