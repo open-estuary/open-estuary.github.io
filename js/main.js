@@ -402,7 +402,7 @@ $(document).on({
 
 function generateMetroBanner(){
 	if(0 == $("#metro-banner")[0].childElementCount){
-    $("#metro-banner").AddMetroSimpleButton('metro-Boards', 'metro-pink', '', 'Boards', "location.href=\'/tags/Hardware-Boards\'");
+    $("#metro-banner").AddMetroDoubleButton('metro-Boards', 'metro-pink', '', 'Boards', "location.href=\'/tags/Hardware-Boards\'");
 //    $("#metro-banner").AddMetroDoubleButton('metro-Notice', 'metro-pink', '', 'This site has been moved to http://open-estuary.com', "location.href=\'http://open-estuary.com\'");
     $("#metro-banner").AddMetroDoubleButton('metro-Quickstart', 'metro-green', '', 'Quick Start', "location.href=\'/tags/Quick-Start\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Overview', 'metro-blue', '', 'Overview', "location.href=\'/tags/Overview-Introduction\'");
