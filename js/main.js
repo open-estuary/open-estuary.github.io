@@ -402,14 +402,14 @@ $(document).on({
 
 function generateMetroBanner(){
 	if(0 == $("#metro-banner")[0].childElementCount){
-    $("#metro-banner").AddMetroDoubleButton('metro-Notice', 'metro-pink', '', 'This site has been moved to http://open-estuary.com', "location.href=\'http://open-estuary.com\'");
+    $("#metro-banner").AddMetroSimpleButton('metro-Boards', 'metro-pink', '', 'Boards', "location.href=\'/tags/Hardware-Boards\'");
+//    $("#metro-banner").AddMetroDoubleButton('metro-Notice', 'metro-pink', '', 'This site has been moved to http://open-estuary.com', "location.href=\'http://open-estuary.com\'");
     $("#metro-banner").AddMetroDoubleButton('metro-Quickstart', 'metro-green', '', 'Quick Start', "location.href=\'/tags/Quick-Start\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Overview', 'metro-blue', '', 'Overview', "location.href=\'/tags/Overview-Introduction\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Gothrough', 'metro-pink', '', 'Go Through', "location.href=\'/tags/Go-Through\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Binary', 'metro-pink', '', 'Binary', "location.href=\'/tags/Binary-Files\'");
     $("#metro-banner").AddMetroSimpleButton('metro-Source', 'metro-blue', '', 'Source Code', "location.href=\'https://github.com/open-estuary/estuary\'");
 //    $("#metro-banner").AddMetroSimpleButton('metro-Caliper', 'metro-green', '', 'Caliper', "location.href=\'/tags/Caliper-for-Benchmarking\'");
-//    $("#metro-banner").AddMetroSimpleButton('metro-Boards', 'metro-blue', '', 'Boards', "location.href=\'/tags/Hardware-Boards\'");
 	}
 }
 
