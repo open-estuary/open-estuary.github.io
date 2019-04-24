@@ -10,13 +10,12 @@ tags:
 This page is to guide user how to integrate their new board into Estuary, and what are the prerequisites for the integration.
 If you want to integrate your new board into Estuary, <a href="https://github.com/open-estuary/estuary/issues/new" target="_blank">please contact us</a>.
 <h2>Hardware Prerequisites</h2>
-1. ARM32\ARM64 based SoC
-
-2. At least one debug UART port
-3. At least one Ethernet network RJ45 port
-4. General power supplier socket
-5. Main memory size &gt; 1G bytes
-6. Secondary storage size &gt; 10G bytes
+<br>1. ARM32\ARM64 based SoC
+<br>2. At least one debug UART port
+<br>3. At least one Ethernet network RJ45 port
+<br>4. General power supplier socket
+<br>5. Main memory size &gt; 1G bytes
+<br>6. Secondary storage size &gt; 10G bytes
 <h2>Software Prerequisites</h2>
 <br>1. Available UEFI based on Linaro UEFI 2015.05(or latest Tiano EDK UEFI) with full open source
 <br>a. Enable UEFI self-upgrade
