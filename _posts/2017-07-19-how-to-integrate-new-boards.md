@@ -22,6 +22,7 @@ If you want to integrate your new board into Estuary, <a href="https://github.co
 <br>b. Boot from Secondary storage by grub
 <br>c. Boot from PXE by grub
 <br>d. ACPI available
+<br>
 <br>2. Available kernel based on linux-4.1.6 with full open source
 <br>a. Enable arch with basically available components e.g.: timer\interrupt\UART
 <br>b. Enable all special peripheral drivers
