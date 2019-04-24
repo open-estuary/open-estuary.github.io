@@ -7,7 +7,7 @@ tags:
     - Documents
 ---
 
-<a><img class="aligncenter size-full wp-image-455" src="https://raw.githubusercontent.com/open-estuary/open-estuary.github.io/master/img/gettingstarted1.png" alt="gettingstarted" width="270" height="253" /></a>
+<a href="http://open-estuary.github.io/2018/07/26/getting-started"><img class="aligncenter size-full wp-image-455" src="https://raw.githubusercontent.com/open-estuary/open-estuary.github.io/master/img/gettingstarted1.png" alt="gettingstarted" width="270" height="253" /></a>
 
 <span style="color: #ff0000;">Supposedly, you are working on Ubuntu (newer than 12.04) or CentOS (newer than 7)!</span>
 Please execute the following command to update.
