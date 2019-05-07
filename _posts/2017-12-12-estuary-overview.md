@@ -37,7 +37,7 @@ The most key goal of Estuary project is to support, enable and speed up the ma
 <ol class="disqus">
 	<li>
 <p class="disqus"><strong>Hardware boards:</strong>
-A variety of boards based on ARM64 SoC will be enabled and integrated by Estuary, no matter which company produce it, so long as the board is designed based on ARM64 SoC, all of them will be encouraged to be integrated into this solution. Now we can support<a style="color: #0066cc;" href="https://open-estuary.github.io/2017/03/07/d05-board/">D05 board,</a><span style="color: #008000;"> <a style="color: #008000;" href="https://open-estuary.github.io/2018/02/09/d06-board/">D06 board</a></span>.</p>
+A variety of boards based on ARM64 SoC will be enabled and integrated by Estuary, no matter which company produce it, so long as the board is designed based on ARM64 SoC, all of them will be encouraged to be integrated into this solution. Now we can support<a style="color: #0066cc;" href="https://open-estuary.github.io/2016/08/30/d05-board/">D05 board,</a><span style="color: #008000;"> <a style="color: #008000;" href="https://open-estuary.github.io/2018/07/25/d06-board/">D06 board</a></span>.</p>
 </li>
 	<li>
 <p class="disqus"><strong>UEFI, BMC &amp; cpld:</strong></p>
