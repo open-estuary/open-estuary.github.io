@@ -1,5 +1,5 @@
 <h2><strong>Release Information:</strong></h2>
-<a href="http://open-estuary.com/estuary-download" target="_blank"><u><span style="color: #0066cc;">Please click here to go to the download page of this release</span></u></a>
+<a href="https://open-estuary.github.io/2015/11/16/binary-download/"target="_blank"><u><span style="color: #0066cc;">Please click here to go to the download page of this release</span></u></a>
 <pre>Release Version         : estuary-v2.1
 Release Date            : 22-Dec-2015
 Applications            : (Currently only for Ubuntu distribution)
