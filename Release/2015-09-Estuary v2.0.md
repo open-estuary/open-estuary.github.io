@@ -1,5 +1,5 @@
 <h2><strong>Release Information:</strong></h2>
-<a href="http://open-estuary.com/estuary-download" target="_blank">Please click here to go to the download page of this release</a>
+<a href="https://open-estuary.github.io/2015/11/16/binary-download/"target="_blank">Please click here to go to the download page of this release</a>
 <pre>Release Version         : estuary-v2.0
 Release Date            : 15-Sep-2015
 Distributions Supported : Ubuntu 15.04 vivid, Fedora 22, OpenSuse Trumbleweed, Debian 8.2 Jessie
