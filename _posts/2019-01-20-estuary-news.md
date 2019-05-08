@@ -16,4 +16,3 @@ tags:
 <span style="color: #339966;"><a style="color: #339966;" href="https://github.com/open-estuary/estuary/blob/master/doc/Deploy_Manual.4All.md" target="_blank">Please click here</a></span> to know, how to standard network installation.</td>
 </tr>
 <tr>
-<td>
