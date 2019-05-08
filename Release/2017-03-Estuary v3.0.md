@@ -1,5 +1,5 @@
 <h2><strong>Release Information:</strong></h2>
-<a href="http://open-estuary.org/binary-download" target="_blank"><u>Please click here to go to the download page of this release</u></a>
+<a href="https://open-estuary.github.io/2015/11/16/binary-download/"target="_blank"><u>Please click here to go to the download page of this release</u></a>
 <pre>Release Version         : v3.0
 Release Date            : 14-Mar-2017
 Applications            : (For all supported distributions)
