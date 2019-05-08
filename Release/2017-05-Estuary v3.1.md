@@ -39,8 +39,8 @@ Estuary is a development version of the whole software solution which target is 
 	- Updated project documentation (Readme, Grub, etc)
 	- Updated applications user manual (Redis, PostgreSQL, MySQL, MongoDB, etc)
 7. CI/Automation
-	- Supported basic CI/Automation for D03 (Build, NFS/Hard disk Deployment, Some tests)
-	- Supported basic  CI/Automation for D05 (Build, NFS/Hard disk Deployment, Some tests)
+	- Supported basic CI/Automation for D05 (Build, NFS/Hard disk Deployment, Some tests)
+	- Supported basic  CI/Automation for D06 (Build, NFS/Hard disk Deployment, Some tests)
 </pre>
 <h2><b>Known issues</b>:</h2>
 <pre>Armor utilities are not fully support</pre>
