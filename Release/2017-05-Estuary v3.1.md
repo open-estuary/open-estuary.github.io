@@ -13,7 +13,7 @@ Distributions Supported : Ubuntu 16.04 ,CentOS 7.3.1611,Debian 8.5.0,Fedora 22,O
 Kernel Version          : 4.9.20
 Bootloader Info         : UEFI 3.0 + Grub 2.02-beta3
    Boot mode            : PXE, NFS, SATA, SAS, USB, USB CDROM
-Boards Supported        : D03(ARM64), D05(ARM64), QEMU v2.8.0(VM on X86),HiKey
+Boards Supported        : D05(ARM64), D06(ARM64), QEMU v2.8.0(VM on X86),HiKey
 Deployment Methods      : Manual binaries, Auto USB disk, Auto ISO file both by web or VGA monitor, Auto PXE</pre>
 <h2><strong>Introduction:</strong></h2>
 Estuary is a development version of the whole software solution which target is the ICT market. It is a long term solution and focus on the combination of the high level components. It is expected to be re-based to top tip kernel /distribution versions/applications at the earliest.
