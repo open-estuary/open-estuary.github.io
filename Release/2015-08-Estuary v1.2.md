@@ -1,5 +1,5 @@
 <h2><strong>Release Information:</strong></h2>
-<a href="http://open-estuary.com/estuary-download" target="_blank">Please click here to go to the download page of this release</a>
+<a href="https://open-estuary.github.io/2015/11/16/binary-download/"target="_blank">Please click here to go to the download page of this release</a>
 <pre>Estuary Release Version : V1.2
 Release Date            : 12-Aug-2015
 Distributions Supported : Ubuntu, Fedora, OpenSuse
