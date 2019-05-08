@@ -72,7 +72,7 @@ Accessing from China: <a href="ftp://117.78.41.188/">ftp://117.78.41.188/</a>
 
 Accessing from outside-China:
 <h2 class="disqus">Getting Started</h2>
-If you want to get started fast with source code, please refer <span style="color: #0066cc;"><a style="color: #0066cc;" href="https://open-estuary.github.io/2018/07/26/getting-started/" target="_blank">Getting Started</a></span> document.
+If you want to get started fast with source code, please refer <span style="color: #0066cc;"><a style="color: #0066cc;" href="https://open-estuary.github.io/2015/09/08/getting-started/" target="_blank">Getting Started</a></span> document.
 If you just want to get started quickly with binaries directly, please refer <span style="color: #3366ff;"><a style="color: #3366ff;" href="https://open-estuary.github.io/2018/05/05/binary-download/">Binary Download</a></span>.
 <p class="disqus">To get\build\bring up estuary completely, please refer to <span style="color: #0066cc;"><a style="color: #0066cc;" href="https://open-estuary.github.io/2015/08/24/estuary-user-manual/">Estuary User Manual</a></span>.
 To post or search any technological information about estuary, please refer to <span style="color: #0066cc;"><a style="color: #0066cc;" href="http://open-estuary.org/forums/" target="_blank">Discussion Forum</a></span>.
