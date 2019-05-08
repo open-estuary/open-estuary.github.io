@@ -21,7 +21,7 @@ Bootloader Info         :
    D06                  : UEFI 3.03 + Grub 2.02-beta3
 Boot mode               : PXE, NFS, iBMC Load ISO
 Boards Supported        : D05(ARM64), D06(ARM64)
-Deployment Methods      : Auto ISO file load, PXE
+Deployment Methods      : Auto ISO file load, PXE</pre>
 <h2><strong>Introduction:</strong></h2>
 Estuary is a development version of the whole software solution which target is the ICT market. It is a long term solution and focus on the combination of the high level components. It is expected to be re-based to top tip kernel /distribution versions/applications at the earliest.
 <h2><strong>Changelog</strong>:</h2>
