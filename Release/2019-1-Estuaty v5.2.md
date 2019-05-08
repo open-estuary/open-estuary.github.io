@@ -9,7 +9,7 @@ tags:
 <h2><strong>Release Information:</strong></h2>
 <a href="https://open-estuary.github.io/2015/11/16/binary-download/"target="_blank"><u>Please click here to go to the download 
 page of this release</u></a>
-<pre>Release Version       : 5.2
+<pre>Release Version         : 5.2
 Release Date            : 20-Jan-2019
 Application support     : https://github.com/open-estuary/distro-repo/blob/master/docs/packages_list_5.2.md
    CI                   : Support NFS/PXE boot testing on D05/D06 boards CentOS & Debian
