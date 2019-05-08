@@ -17,9 +17,3 @@ tags:
 </tr>
 <tr>
 <td>
-<h3><span style="color: #008000;"><strong>Estuary v5.2 Releases</strong></span></h3>
-Estuary v5.2 Releases. <span style="text-decoration: underline;"><span style="color: #008000;"><a style="color: #008000; text-decoration: underline;" href="ftp://117.78.41.188/releases/lastest/ReleaseNotes.md" target="_blank">More info, please click here.</a></span></span><span style="color: #008000;"> </span></td>
-</tr>
-</tbody>
-</table>
-&nbsp;
