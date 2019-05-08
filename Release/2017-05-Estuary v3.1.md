@@ -7,7 +7,7 @@ Openstack               : Support Openstack Newton version which based on Linaro
    OpenJDK              : v1.8
    Docker               : v1.6.2
    MySQL                : percona-5.6.22-72.0
-   CI                   : Support NFS/SAS boot testing on D03/D05 board（OS is Ubuntu or CentOS）
+   CI                   : Support NFS/SAS boot testing on D05/D06 board（OS is Ubuntu or CentOS）
    Armor tools          : include perf, gdb, strace... (totally more than 40 tools for system debug\analyses\diagnosis）
 Distributions Supported : Ubuntu 16.04 ,CentOS 7.3.1611,Debian 8.5.0,Fedora 22,OpenSuse tumbleweed,Rancher 1.0.0,OpenEmbedded 2.0,mini-rootfs 1.1
 Kernel Version          : 4.9.20
