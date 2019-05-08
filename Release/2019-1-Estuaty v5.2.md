@@ -47,3 +47,6 @@ Estuary is a development version of the whole software solution which target is 
   8. CI/Automation
        - Supported basic CI/Automation for D03 (Build, NFS/PXE Deployment, Some tests)
        - Supported basic CI/Automation for D05 (Build, NFS/PXE Deployment, Some tests)</pre>
+  <h2><b>Known issues</b>:</h2>
+  <pre>1. After upgrade the bios,cannot find the option to boot CentOS & Debian</pre>
+  
