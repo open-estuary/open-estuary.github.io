@@ -1,4 +1,5 @@
-#Introduction
+
+# Introduction
 ---
 
 This documentation describes how to get, build, deploy and bring up target system based Estuary Project, 
@@ -11,9 +12,9 @@ for more detail difference between them, please refer to
 ---
 
 
-#Preparation
+# Preparation
 
-##1. Prerequisite
+## 1. Prerequisite
 ---
 **Host machine**: Debian (newer than 9.6) or CentOS (newer than 7.6) to download and build estuary.
 
@@ -28,7 +29,7 @@ If you work on a real hardware board based on ARM SoC, follows should be availab
 
 ---
 
-##2. Get & Build Estuary yourself
+## 2. Get & Build Estuary yourself
 ---
 You can refer to [getting started](https://open-estuary.github.io/2015/09/08/getting-started/) to get 
 and build the whole project.
@@ -38,7 +39,7 @@ and build the whole project.
 
 ---
 
-##3. Use binaries directly
+## 3. Use binaries directly
 ---
 Anyway, before booting up system, all binaries should be available firstly.
 
@@ -53,7 +54,7 @@ In fact, you can install these packages directly by yum/apt tools while using th
 
 ---
 
-#Bring up System
+# Bring up System
 ---
 We provide so many different methods to bring up system with the corresponding binaries, 
 you can get more detail documentations about it in directory after building as above, 
