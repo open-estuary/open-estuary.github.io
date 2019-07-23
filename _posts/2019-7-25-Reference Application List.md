@@ -24,15 +24,14 @@ Currently the following packages are supported by Open-Estuary repo:
 |OpenJDK|5.2|1.8.0|Y|Y|[N/A]( )|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/openjdk.sh)|[N/A]( )|
 |OpenSSH|5.2|7.4p1|Y|Y|[src](https://github.com/openssh/openssh-portable)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/openssh.sh)|[N/A]( )|
 |Ceph|5.2|13.2.2|Y||[src](https://github.com/ceph/ceph)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/ceph.sh)|[N/A]( )|
-|Ceph|5.2|10.2.11||Y|[src](https://github.com/ceph/ceph)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/ceph.sh)|[N/A]( )|
+|Ceph|5.2|12.2.11||Y|[src](https://github.com/ceph/ceph)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/ceph.sh)|[N/A]( )|
 |Hadoop|5.2|2.7.6|Y|Y|[src](http://mirror.bit.edu.cn/apache/hadoop/common/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/hadoop.sh)|[N/A]( )|
-|hive|5.2|2.3.3|Y|Y|[src](http://mirror.bit.edu.cn/apache/hive/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/hive.sh)|[N/A]( )|
+|hive|5.2|2.2.1|Y|Y|[src](http://mirror.bit.edu.cn/apache/hive/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/hive.sh)|[N/A]( )|
 |Spark|5.2|2.3.0|Y|Y|[src](http://mirror.bit.edu.cn/apache/spark/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/spark.sh)|[N/A]( )|
 |ltp|5.2|20180926|Y|Y|[src](https://github.com/linux-test-project/ltp)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/ltp.sh)|[rpm](http://203.160.91.226:18083/repodata/releases/5.0/centos/aarch64/ltp-full-20180926-1.el7.aarch64.rpm)|
-|libhugetlbfs|5.2|2.16|Y||[src](https://github.com/libhugetlbfs/libhugetlbfs)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/libhugetlbfs.sh)|[N/A]( )|
-|libhugetlbfs|5.2|2.20||Y|[src](https://github.com/libhugetlbfs/libhugetlbfs)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/libhugetlbfs.sh)|[N/A]( )|
+|libhugetlbfs|5.2|2.20|Y|Y|[src](https://github.com/libhugetlbfs/libhugetlbfs)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/libhugetlbfs.sh)|[N/A]( )|
 |samba|5.2|4.8.3|Y||[src](https://github.com/samba-team/samba)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/samba.sh)|[N/A]( )|
-|samba|5.2|4.5.12||Y|[src](https://github.com/samba-team/samba)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/samba.sh)|[N/A]( )|
+|samba|5.2|4.5.16||Y|[src](https://github.com/samba-team/samba)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/samba.sh)|[N/A]( )|
 |ftp|5.2|0.17|Y|Y|[N/A](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/ftp.sh)|[script]( )|[N/A]( )|
 |bind|5.2|9.9.4|Y||[src](https://github.com/isc-projects/bind9)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/bind.sh)|[N/A]( )|
 |bind|5.2|9.10||Y|[src](https://github.com/isc-projects/bind9)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/bind.sh)|[N/A]( )|
@@ -42,11 +41,10 @@ Currently the following packages are supported by Open-Estuary repo:
 |dhcp|5.2|4.3.5||Y|[src](https://github.com/freebsd/freebsd/tree/master/sbin/dhclient)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/dhcp.sh)|[N/A]( )|
 |Python|5.2|2.7.5|Y||[src](https://github.com/python/cpython)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python.sh)|[N/A]( )|
 |Python|5.2|2.7.13||Y|[src](https://github.com/python/cpython)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python.sh)|[N/A]( )|
-|Node.js|5.2|6.14.3|Y||[src](https://github.com/nodejs/node)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/nodejs.sh)|[N/A]( )|
-|Node.js|5.2|10.15.0||Y|[src](https://github.com/nodejs/node)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/nodejs.sh)|[N/A]( )|
+|Node.js|5.2|6.16.0|Y||[src](https://github.com/nodejs/node)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/nodejs.sh)|[N/A]( )|
+|Node.js|5.2|8.16.0||Y|[src](https://github.com/nodejs/node)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/nodejs.sh)|[N/A]( )|
 |Malluma|5.2|2.0||Y|[N/A]( )|[N/A]( )|[rpm](http://203.160.91.226:18083/repodata/releases/5.2/centos/aarch64/Malluma-2.0-1.aarch64.rpm)|
-|busybox|5.2|1.22.0|Y||[src](https://busybox.net/downloads/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/busybox.sh)|[N/A]( )|
-|busybox|5.2|1.22.1||Y|[src](https://busybox.net/downloads/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/busybox.sh)|[N/A]( )|
+|busybox|5.2|1.22.0|Y|Y|[src](https://busybox.net/downloads/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/busybox.sh)|[N/A]( )|
 |workload-automation|5.2|3.0.0|Y|Y|[src](https://github.com/ARM-software/workload-automation)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/workload-automation.sh)|[N/A]( )|
 |httperf|5.2|0.9.0|Y|Y|[src](https://github.com/httperf/httperf)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/httperf.sh)|[N/A]( )|
 |lshw|5.2|02.18|Y|Y|[src](https://github.com/lyonel/lshw)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/lshw.sh)|[N/A]( )|
@@ -74,8 +72,9 @@ Currently the following packages are supported by Open-Estuary repo:
 |python-cssselect|5.2|0.9.1|Y||[src](https://github.com/scrapy/cssselect)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python-cssselect.sh)|[N/A]( )|
 |python-cssselect|5.2|1.0.1||Y|[src](https://github.com/scrapy/cssselect)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python-cssselect.sh)|[N/A]( )|
 |python-lxml|5.2|3.2.1|Y||[src](https://github.com/lxml/lxml)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python-lxml.sh)|[N/A]( )|
-|python-lxml|5.2|3.7.2||Y|[src](https://github.com/lxml/lxml)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python-lxml.sh)|[N/A]( )|
-|snappy|5.2|1.1.4|Y|Y|[src](https://github.com/google/snappy)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/snappy.sh)|[rpm](http://203.160.91.226:18083/repodata/releases/5.0/centos/aarch64/snappy-1.1.4-3.el7.centos.aarch64.rpm)|
+|python-lxml|5.2|3.7.1||Y|[src](https://github.com/lxml/lxml)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python-lxml.sh)|[N/A]( )|
+|snappy|5.2|1.1.4|Y||[src](https://github.com/google/snappy)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/snappy.sh)|[rpm](http://203.160.91.226:18083/repodata/releases/5.0/centos/aarch64/snappy-1.1.4-3.el7.centos.aarch64.rpm)|
+|snappy|5.2|1.1.7||Y|[src](https://github.com/google/snappy)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/snappy.sh)|[rpm](http://203.160.91.226:18083/repodata/releases/5.0/centos/aarch64/snappy-1.1.4-3.el7.centos.aarch64.rpm)|
 |source-highlight|5.2|3.1.8|Y|Y|[src](https://mirrors.ustc.edu.cn/gnu/src-highlite/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/source-highlight.sh)|[rpm](http://203.160.91.226:18083/repodata/releases/5.0/centos/aarch64/source-highlight-3.1.8-10.el7.centos.aarch64.rpm)|
 |sysstat|5.2|11.5.5|Y||[src](https://github.com/sysstat/sysstat)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/sysstat.sh)|[rpm](http://203.160.91.226:18083/repodata/releases/5.0/centos/aarch64/sysstat-11.5.5-1.el7.centos.aarch64.rpm)|
 |sysstat|5.2|11.4.3||Y|[src](https://github.com/sysstat/sysstat)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/sysstat.sh)|[N/A]( )|

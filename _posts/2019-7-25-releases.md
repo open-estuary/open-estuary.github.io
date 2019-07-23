@@ -16,6 +16,12 @@ tags:
 <th style="text-align: center;">Highlights</th>
 </tr>
 <tr>
+<td style="text-align: left;"><strong><span id="Estuary_5.20_is_released"><span id="Estuary_5.20_is_released"><a href="https://github.com/open-estuary/open-estuary.github.io/blob/master/Release/2019-7-Estuaty%20v5.20.md">Estuary5.10</a></span></span></strong><strong><span id="Estuary_5.20_is_released">
+</span></strong></td>
+<td style="text-align: center;">June,2019</td>
+<td><a href="https://github.com/open-estuary/open-estuary.github.io/blob/master/Release/2019-7-Estuaty%20v5.20.md">Update Reference Application</a>.</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong><span id="Estuary_5.10_is_released"><span id="Estuary_5.10_is_released"><a href="https://github.com/open-estuary/open-estuary.github.io/blob/master/Release/2019-6-Estuaty%20v5.10.md">Estuary5.10</a></span></span></strong><strong><span id="Estuary_5.10_is_released">
 </span></strong></td>
 <td style="text-align: center;">June,2019</td>
