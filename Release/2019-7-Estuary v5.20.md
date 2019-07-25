@@ -15,9 +15,10 @@ Application support     : http://open-estuary.github.io/2019/06/29/Reference-App
 Distributions Supported : CentOS 7.5,Debian 9
 Kernel Version          : 5.0
 Bootloader Info         : 
-   TaiShan2280          : BIOS 1.24.1
-   D060                 : BIOS 3.24.1
-   D061                 : BIOS 1.60
+   TaiShan2280          : BIOS 1.60
+   D06ES                : BIOS 1.24.1
+   D060                 : BIOS 2.24.1
+   D061                 : BIOS 3.24.1
 Boot mode               : iBMC Load ISO
 Boards Supported        : D05(ARM64,Kunpeng 916), D060(ARM64,Kunpeng 920), D061(ARM64,Kunpeng 920)
 Deployment Methods      : Auto ISO file load </pre>
