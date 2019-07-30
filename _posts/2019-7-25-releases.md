@@ -18,7 +18,7 @@ tags:
 <tr>
 <td style="text-align: left;"><strong><span id="Estuary_5.20_is_released"><span id="Estuary_5.20_is_released"><a href="https://github.com/open-estuary/open-estuary.github.io/blob/master/Release/2019-7-Estuary%20v5.20.md">Estuary5.20</a></span></span></strong><strong><span id="Estuary_5.20_is_released">
 </span></strong></td>
-<td style="text-align: center;">June,2019</td>
+<td style="text-align: center;">July,2019</td>
 <td><a href="https://github.com/open-estuary/open-estuary.github.io/blob/master/Release/2019-7-Estuary%20v5.20.md">Update to Kernel 5.0</a>.</td>
 </tr>
 <tr>
