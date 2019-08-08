@@ -2,85 +2,37 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
-<!-- Post Header -->
-<style type="text/css">
-    header.intro-header{
-        position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
-    }
-
-    {% if page.header-mask %}
-    header.intro-header .header-mask{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0,0,0, {{ page.header-mask }});
-    }
-    {% endif %}
-</style>
-<header class="intro-header" >
-    <div class="header-mask"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        {% for tag in page.tags %}
-                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
-                    <h1>{{ page.title }}</h1>
-                    {% comment %}
-                        always create a h2 for keeping the margin , Hux
-                    {% endcomment %}
-                    {% comment %} if page.subtitle {% endcomment %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% comment %} endif {% endcomment %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
 <!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
+
+    <div class="layui-fluid" style="margin:100px 0px;">
+        <div class="layui-row">
 
     <!-- Post Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
+            <div class="layui-col-lg6 layui-col-md6 layui-col-md-offset2 layui-col-lg-offset2 layui-col-sm12 layui-xs12               
+            postlist-container">
 
 				{{ content }}
 
                 <hr style="visibility: hidden;">
-
-                <ul class="pager">
+                <br>
+                <div class="layui-col-lg12">
                     {% if page.previous.url %}
-                    <li class="previous">
+                    <button type="button"  class="layui-btn layui-btn-primary" style="display: block;width:45%;height:120px;float:left;font-size: 18px;font-weight: 900;white-space: inherit;">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                        Previous<br>
-                        <span>{{page.previous.title}}</span>
+                            <div style="height: 30px;">Previous</div>
+                            <div >{{page.previous.title}}</div>
                         </a>
-                    </li>
+                    </button>
                     {% endif %}
                     {% if page.next.url %}
-                    <li class="next">
+                    <button type="button"  class="layui-btn layui-btn-primary" style="display: block;width:45%;height:120px;float: right;font-size: 18px;font-weight: 900;white-space: inherit;">
                         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                        Next<br>
-                        <span>{{page.next.title}}</span>
+                            <div style="height: 30px;">Next</div>
+                            <div >{{page.next.title}}</div>
                         </a>
-                    </li>
+                    </button>
                     {% endif %}
-                </ul>
-
+                </div>           
 
                 <!--Gitalk评论start  -->
                 {% if site.gitalk.enable %}
@@ -115,14 +67,17 @@ layout: default
                 {% endif %}
 
             </div>  
+            
 
     <!-- Side Catalog Container -->
         {% if page.catalog %}
             <div class="
-                col-lg-2 col-lg-offset-0
+            layui-col-lg2 layui-col-md2 layui-col-md-offset layui-col-lg-offset layui-col-sm12 layui-xs12
+                
+            sidebar-container
                 visible-lg-block
                 sidebar-container
-                catalog-container">
+                catalog-container" style="margin-top: 50px;margin-left: 50px;">
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
                     <h5>
@@ -135,9 +90,8 @@ layout: default
 
     <!-- Sidebar Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
+            layui-col-lg6 layui-col-md6 layui-col-md-offset2 layui-col-lg-offset2 layui-col-sm12 layui-xs12               
+            sidebar-container">
 
                 <!-- Featured Tags -->
                 {% if site.featured-tags %}
@@ -146,7 +100,7 @@ layout: default
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
+                            {% if tag[1].size > site.featured-condition-size %}
                 				<a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
                                     {{ tag[0] }}
                                 </a>
@@ -169,7 +123,7 @@ layout: default
             </div>
         </div>
     </div>
-</article>
+
 
 
 {% if site.disqus_username %}

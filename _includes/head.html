@@ -20,12 +20,14 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- layui css文件 -->
+    <link rel="stylesheet" href="{{ "/layui/css/layui.css" | prepend: site.baseurl }}">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/default.css" | prepend: site.baseurl }}" type="text/css" media="all">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/hux-blog.css" | prepend: site.baseurl }}">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
@@ -34,6 +36,9 @@
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    
 
 
     <!-- Hux Delete, sad but pending in China
@@ -51,5 +56,26 @@
     <![endif]-->
 
     <!-- ga & ba script hoook -->
-    <script></script>
+    <!-- for 360 -->
+    <meta name="renderer" content="webkit">
+    <meta name="applicable-device" content="pc,mobile">
+    <!-- for baidu -->
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <!-- for baidu -->
+    <meta name="MobileOptimized" content="width">
+    <!-- for baidu -->
+    <meta name="HandheldFriendly" content="true">
+
+    
+    <!--<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://5a81147be8d36.t73.qifeiye.com/xmlrpc.php">-->
+    <!--[if lt IE 9]>
+<script src="http://5a81147be8d36.t73.qifeiye.com/FeiEditor/bitSite/js/html5shiv.min.js"></script>
+<![endif]-->
+    <!--[if lt IE 9]>
+<script src="http://5a81147be8d36.t73.qifeiye.com/FeiEditor/bitSite/js/respond.min.js"></script>
+<![endif]-->
+
+
+
 </head>

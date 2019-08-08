@@ -1,0 +1,201 @@
+---
+layout: page
+title: "Estuary"
+description: ""
+header-img: "img/post-bg-os-metro.jpg"
+---
+<!-- Language Selector -->
+<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英文 English </option>
+</select> -->
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <!-- {{site.data}} -->
+     
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>News</legend>
+    </fieldset>
+    <blockquote class="layui-elem-quote">
+        {% for post in site.posts %}
+            {% if site.data.category.Estuary.News contains post.title %}
+            <h3><a href="{{post.url|prpend:site.baseurl}}"><i class="layui-icon layui-icon-read"></i>{{post.title}}</a></h3>
+            <p class="post-content-preview">
+                    {{ post.content | strip_html | truncate:200 }}
+            </p>
+            <p class="post-meta">
+             Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+            </p>
+            {% endif %}  
+         {% endfor %}
+         
+       
+    
+    </blockquote>
+    
+    <fieldset class="layui-elem-field layui-field-title">
+            <legend>Brief</legend>
+        </fieldset>
+    
+        <blockquote class="layui-elem-quote">
+            {% for post in site.posts %}
+                {% if site.data.category.Estuary.Brief_introduction contains post.title %}
+                    <h3><a href="{{post.url|prpend:site.baseurl}}"><i class="layui-icon layui-icon-read"></i>{{post.title}}</a></h3>
+                    <p class="post-content-preview">
+                            {{ post.content | strip_html | truncate:200 }}
+                    </p>
+                    <p class="post-meta">
+                        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+                    </p>
+                {% endif %}  
+            {% endfor %}
+        </blockquote>
+        <fieldset class="layui-elem-field layui-field-title">
+                <legend>Introduction</legend>
+            </fieldset>
+        
+            <blockquote class="layui-elem-quote introduction">
+                {% for post in site.posts %}
+                    {% if site.data.category.Estuary.Entry.Default contains post.title %}
+                    <h3><a href="{{post.url|prpend:site.baseurl}}"><i class="layui-icon layui-icon-read"></i>{{post.title}}</a></h3>
+                    <p class="post-content-preview">
+                            {{ post.content | strip_html | truncate:200 }}
+                    </p>
+                    <p class="post-meta">
+                        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+                    </p>
+                    {% endif %}  
+                {% endfor %}
+                <div style="text-align: right;padding-top: 5px;" id="moreDiv"><button type="button"  class="layui-btn layui-btn-primary layui-btn-radius" onclick="btnClick()">More...</button></div>
+                {% for post in site.posts %}
+                    {% if site.data.category.Estuary.Entry.More contains post.title %}
+                    <div class="more" style="display: none;">
+                        <h3><a href="{{post.url|prpend:site.baseurl}}"><i class="layui-icon layui-icon-read"></i>{{post.title}}</a></h3>
+                        <p class="post-content-preview">
+                                {{ post.content | strip_html | truncate:200 }}
+                        </p>
+                        <p class="post-meta">
+                            Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+                        </p>
+                    </div>    
+                    {% endif %}  
+                {% endfor %}
+            </blockquote>
+            <fieldset class="layui-elem-field layui-field-title">
+                    <legend>Platforms</legend>
+                </fieldset>
+            
+                <blockquote class="layui-elem-quote">
+                    {% for post in site.posts %}
+                        {% if site.data.category.Estuary.Device_introduction contains post.title %}
+                        <h3><a href="{{post.url|prpend:site.baseurl}}"><i class="layui-icon layui-icon-read"></i>{{post.title}}</a></h3>
+                        <p class="post-content-preview">
+                                {{ post.content | strip_html | truncate:200 }}
+                        </p>
+                        <p class="post-meta">
+                            Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+                        </p>
+                        {% endif %}  
+                    {% endfor %}
+                
+                </blockquote>
+
+</div>
+
+
+
+</script>
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render() {
+        var _hash = window.location.hash;
+    }
+
+    // handle select change
+    function onLanChange(index) {
+        if (index == 0) {
+            window.location.hash = "#zh"
+        } else {
+            window.location.hash = "#en"
+        }
+    }
+
+    // init
+    _render();
+</script>
+<script>
+    btnClick = function(){
+        
+        var moreDiv = $("#moreDiv")
+        var moreBtn = $("#moreDiv > button")
+        var moreBtn_content = moreBtn.html()
+        console.log(moreBtn_content)
+        if(moreBtn_content === 'More...'){
+            $('.more').css('display','block')
+            $('.introduction').append(moreDiv)
+            moreBtn.html('Retract')
+        }else{
+            $('.more').css('display','none')
+            $('.introduction').append(moreDiv)
+            moreBtn.html('More...')
+        }
+        
+    }
+</script>
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Gitalk link  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '{{site.gitalk.clientID}}',
+        clientSecret: '{{site.gitalk.clientSecret}}',
+        repo: '{{site.gitalk.repo}}',
+        owner: '{{site.gitalk.owner}}',
+        admin: ['{{site.gitalk.admin}}'],
+        distractionFreeMode: {{ site.gitalk.distractionFreeMode }},
+    id: 'about',
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
+
+<!-- disqus 评论框 start  -->
+{% if site.disqus.enable %}
+
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus.username}}";
+    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function () {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}

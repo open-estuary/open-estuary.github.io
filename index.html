@@ -2,31 +2,58 @@
 layout: page
 description: "Welcome to Estuary."
 ---
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+{% for post in paginator.posts reversed %}
+    {% if site.data.category.Home.Default contains post.title %}
+        <div class="post-preview">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h2 class="post-title"><i class="layui-icon layui-icon-read"></i>
+                    {{ post.title }}
+                </h2>
+                {% if post.subtitle %}
+                <h3 class="post-subtitle">
+                    {{ post.subtitle }}
+                </h3>
+                {% endif %}
+                <div class="post-content-preview">
+                    {{ post.content | strip_html | truncate:200 }}
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+            </p>
         </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
+        <hr/>
+    {% endif %}
+{% endfor %}
+<div style="text-align: right;" id="moreDiv"><button type="button"  class="layui-btn layui-btn-primary layui-btn-radius" onclick="btnClick()">More...</button></div>
+
+{% for post in paginator.posts  %}
+    {% if site.data.category.Home.More contains post.title %}
+        <div class="post-preview more" style="display: none;">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h2 class="post-title"><i class="layui-icon layui-icon-read"></i>
+                    {{ post.title }}
+                </h2>
+                {% if post.subtitle %}
+                <h3 class="post-subtitle">
+                    {{ post.subtitle }}
+                </h3>
+                {% endif %}
+                <div class="post-content-preview">
+                    {{ post.content | strip_html | truncate:200 }}
+                </div>
+            </a>
+            <p class="post-meta">
+                Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+            </p>
+            <hr>
+        </div>
+       
+    {% endif %}
 {% endfor %}
 
 <!-- Pager -->
-{% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 10 %}
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
@@ -40,3 +67,22 @@ description: "Welcome to Estuary."
     {% endif %}
 </ul>
 {% endif %}
+<script>
+btnClick = function(){
+    
+    var moreDiv = $("#moreDiv")
+    var moreBtn = $("#moreDiv > button")
+    var moreBtn_content = moreBtn.html()
+    console.log(moreBtn_content)
+    if(moreBtn_content === 'More...'){
+        $('.more').css('display','block')
+        $('.postlist-container').append(moreDiv)
+        moreBtn.html('Retract')
+    }else{
+        $('.more').css('display','none')
+        $('.postlist-container').append(moreDiv)
+        moreBtn.html('More...')
+    }
+    
+}
+</script>

@@ -1,0 +1,40 @@
+Home:
+  Default:
+    - Estuary Overview
+    - Releases
+    - Reference Application List    
+  More:
+    - Estuary User Manual
+    - Documents Summary  
+
+Estuary:
+  News:
+    - Releases
+    - Hisilicon D05 Board Support Standard Network Installation
+  Brief_introduction: #简介
+    - Estuary Overview
+  Entry:
+    Default:
+      - Estuary User Manual
+      - Documents Summary
+    More : 
+      - How To Integrate New Boards
+      - Binary Download
+  Device_introduction:
+    - D05 Board
+    - D06 Board
+
+Applications:
+  reference_app:
+    - Reference Application List 
+
+Distribution:
+  Release:
+    - Releases
+  Release_deployment:
+    -    
+  Kernel_upgrades:
+    -
+  Other_releases:
+    -      
+  

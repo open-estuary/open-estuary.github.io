@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
     //primary navigation slide-in effect
     if ($(window).width() > MQL) {
         var headerHeight = $('.navbar-custom').height(),
-            bannerHeight  = $('.intro-header .container').height();     
+            bannerHeight  = $('div.content-wrapper.twelve.columns').height();     
         $(window).on('scroll', {
                 previousTop: 0
             },
@@ -73,12 +73,13 @@ jQuery(document).ready(function($) {
 
 
                 //adjust the appearance of side-catalog
-                $catalog.show()
-                if (currentTop > (bannerHeight + 41)) {
+            //    console.log(currentTop,bannerHeight)
+                if (currentTop > (bannerHeight + 40)) {
                     $catalog.addClass('fixed')
                 } else {
                     $catalog.removeClass('fixed')
                 }
+                $catalog.show()
             });
     }
 });

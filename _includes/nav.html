@@ -1,85 +1,551 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </div>
+<div id="page" class="bodyheader0 wide ">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="{{ site.baseurl }}/">Home</a>
-                    </li>
-                    {% for page in site.pages %}{% if page.title %}
-                    <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    </li>
-                    {% endif %}{% endfor %}
-                </ul>
-            </div>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+	<!-- left, center, classical, classic-centered -->
+	<!-- !Header -->
+	<header id="header" class="logo-left-right wf-mobile-hidden headerPM menuPosition transparent" role="banner">
+		<!-- class="overlap"; class="logo-left", class="logo-center", class="logo-classic" -->
+		<div class="wf-wrap">
+			<div class="wf-table">
+
+				<!-- !- Navigation -->
+				<nav id="navigation" class="wf-td" bitdataaction="site_menu_container" bitdatalocation="primary">
+					<ul id="main-nav" data-st="0" data-sp="0" data-fh="0" data-mw="0" data-lh="48" class="mainmenu fancy-rollovers wf-mobile-hidden bit-menu-default underline-hover position-text-right" data-bit-menu="underline-hover" data-bit-float-menu="underline-hover">
+						<li class=" menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9722 current_page_item bit-menu-post-id-9722 menu-item-9723  first level-arrows-on">
+							<a href="{{ "/" | prepend: site.baseurl }}"><span>HOME<i class="underline"></i></span></a>
+						</li>
+						<li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6400 menu-item-6401 level-arrows-on">
+							<a href="{{ "/About" | prepend: site.baseurl }}"><span>ABOUT<i class="underline"></i></span></a>
+						</li>
+						<li class=" menu-item menu-item-type-post_type menu-item-object-page bit-menu-post-id-6411 menu-item-6412 level-arrows-on">
+							<a href="{{ "/Tags" | prepend: site.baseurl }}"><span>TAGS<i class="underline"></i></span></a>
+						</li>
+						
+					</ul>
+
+				</nav>
+				<div style="display:none;" id="main-nav-slide">
+					<div class="main-nav-slide-inner" >
+						<div class="floatmenu-bar-right bit_widget_more" bitdatamarker="bitHeader-3" bitdataaction="site_fix_container" bitdatacolor="white">
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+			<!-- #branding -->
+		</div>
+		<!-- .wf-wrap -->
+	</header>
+	<div id="dl-menu" class="dl-menuwrapper wf-mobile-visible dropCenterStyle_containter center">
+		<a data-padding="" data-top="8" data-right="8" rel="nofollow" id="mobile-menu" class="dropCenterStyle center">
+			<span class="menu-open  phone-text">首页</span>
+			<span class="menu-close">关闭</span>
+			<span class="menu-back">返回上一级</span>
+			<span class="wf-phone-visible">&nbsp;</span>
+			<span class="mobile_icon glyphicon glyphicon-icon-angle-down"></span>
+		</a>
+	</div>
+	<!-- #masthead -->
+
+	<section class="bitBanner" id="bitBanner" bitdatamarker="bitBanner" bitdataaction="site_fix_container">
+	</section>
+	<div id="main" class="bit_main_content">
+	
+		<div class="main-gradient"></div>
+
+		<div class="wf-wrap">
+			<div class="wf-container-main">
+
+				<div id="content" class="content" role="main">
+
+					<div class="main-outer-wrapper ">
+						<div class="bit_row">
+
+							<div class="twelve columns no-sidebar-content ">
+
+								<div class="bit_row">
+
+									<div class="content-wrapper twelve columns ">
+										<section data-fixheight="" class="qfy-row-1-5d36c98b37ae0934729 section     no  section-text-no-shadow section-inner-no-shadow section-normal section-orgi" id="bit_5nt7d" style="margin-bottom:0;border-radius:0px;color:#000000;">
+											<style class="row_class qfy_style_class">
+												@media only screen and (min-width: 992px) {
+													section.section.qfy-row-1-5d36c98b37ae0934729 {
+														padding-left: 0;
+														padding-right: 0;
+														padding-top: 0;
+														padding-bottom: 0;
+														margin-top: 0;
+														min-height: 200px;
+													}
+													section.section.qfy-row-1-5d36c98b37ae0934729> .container {
+														max-width: 1280px;
+														margin: 0 auto;
+													}
+												}
+												
+												@media only screen and (max-width: 992px) {
+													.bit-html section.section.qfy-row-1-5d36c98b37ae0934729 {
+														padding-left: 0px;
+														padding-right: 0px;
+														padding-top: 0;
+														/* padding-bottom: 75px; */
+														margin-top: 0;
+														min-height: 0;
+													}
+												}
+											</style>
+												<div class="layui-carousel" id="test1" lay-filter="test1" >
+													{% if page.layout == 'page1' %}
+													<div class= "page_title" >
+														<span style="font-size:42px;">
+															{% if page.title%}
+																{{page.title}}
+															{% else %} 
+																{{site.title}}
+															{% endif %}
+														</span>
+														</br>
+														<span style="font-size:18px;">
+															{% if page.description%}
+																{{page.description}}
+															{% else %} 
+																{{site.description}}
+															{% endif %}
+														</span>
+													</div>
+													<style>
+														@media only screen and (min-width: 992px) {
+															.page_title {
+																position:absolute;top:42%;left:25%;z-index:20;color:#fff;
+															}
+															
+														}
+														
+														@media only screen and (max-width: 992px) {
+															.page_title {
+																position:absolute;top:21%;left:42%;z-index:20;color:#fff;
+															}
+														}
+													</style>
+													{% endif %}
+													<div carousel-item="">
+														
+
+														<div style="background-image: url('{{ site.baseurl }}/img/post-bg-universe.jpg') ;background-repeat:no-repeat; background-size:cover; background-attachment:scroll; background-position:0 49%;">
+															<div class="mid-title">
+																<a href="" >Estuary Overview</a>
+															</div>
+														</div>
+														<div style="background-image: url('{{ site.baseurl }}/img/post-bg-os-metro.jpg') ;background-repeat:no-repeat; background-size:cover; background-attachment:scroll; background-position:0 49%;">
+															<div class="mid-title">
+																<a href="" >Reference Application List</a>
+															</div>
+														</div>
+														<div style="background-image: url('{{ site.baseurl }}/img/post-bg-debug.png') ;background-repeat:no-repeat; background-size:cover; background-attachment:scroll; background-position:0 49%;">
+															<div class="mid-title">
+																<a href="" >Releases</a>
+															</div>
+														</div>
+														
+													</div>
+												</div>
+												<style>
+												
+														div.mid-title {
+															font-size: 38px;																
+															color: #fff;
+															z-index:20;
+															text-align: center;
+															margin-top: 155px;
+														
+														}
+												
+
+												</style>														
+										</section>
+										<section data-fixheight="" class="qfy-row-2-5d36c98b39345454521 section     bothfull  section-text-no-shadow section-inner-no-shadow section-normal section-orgi" id="bit_uy6nn" style="margin-bottom:0;border-radius:0px;color:#666666;">
+											<style class="row_class qfy_style_class">
+												@media only screen and (min-width: 992px) {
+													section.section.qfy-row-2-5d36c98b39345454521 {
+														padding-left: 0;
+														padding-right: 0;
+														padding-top: 0;
+														padding-bottom: 0;
+														margin-top: 0;
+														min-height: 120px;
+													}
+													section.section.qfy-row-2-5d36c98b39345454521> .container {
+														max-width: 1500px;
+														margin: 0 auto;
+													}
+												}
+												
+												@media only screen and (max-width: 992px) {
+													.bit-html section.section.qfy-row-2-5d36c98b39345454521 {
+														padding-left: 0;
+														padding-right: 15px;
+														padding-top: 0;
+														/* padding-bottom: 30px; */
+														margin-top: 0;
+														min-height: 0;
+													}
+												}
+											</style>
+											<div class="section-background-overlay background-overlay grid-overlay-0 " style="background-color: #282c35;"></div>
+
+											<div class="container">
+												<div class="row qfe_row zone_ul">
+													<div data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-duration="1" data-delay="" class=" qfy-column-2-5d36c98b39660539996 qfy-column-inner  vc_span_class  vc_span4  text-Default small-screen-undefined column_middle notfullrow" data-dw="1/2" data-fixheight="" style="margin-top: 0px; margin-bottom: 0px;">
+														<a href="{{ site.baseurl }}/Estuary">
+														<div style="min-height:120px;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;border-radius:0px;border-top:0px solid rgba(62,69,81,1);border-bottom:0px solid rgba(62,69,81,1);border-left:1px solid rgba(62,69,81,1);border-right:1px solid rgba(62,69,81,1);;position:relative;" class="column_inner ">
+															<div class=" background-overlay grid-overlay-0" style="background-color:transparent;width:100%;"></div>
+															<div class="column_containter" style="z-index:3;position:relative;">
+																<div id="vc_header_5d36c98b39d69887" m-padding="30px 0px 0px 0px" p-padding="30px 0 0 30px" css_animation_delay="0" qfyuuid="qfy_header_urciw-c-7o" data-anitime="0.7" class="qfy-element minheigh1px qfe_text_column qfe_content_element " style="position: relative;;;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:30px;padding-bottom:0;padding-right:0;padding-left:30px;">
+																	<style>
+																		#vc_header_5d36c98b39d69887 .qfy_title_inner,
+																		#vc_header_5d36c98b39d69887 .qfy_title_image_inner {
+																			vertical-align: middle !important;
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b39d69887 .header_title {
+																				font-size: 14px !important;
+																			}
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b39d69887 .header_subtitle {
+																				font-size: 12px !important;
+																			}
+																		}
+																	</style>
+																	<div class="qfe_wrapper">
+																		<div class="qfy_title left mobileleft">
+																			<div class="qfy_title_image_warpper" style="display:inline-block;position:relative;max-width:100%;">
+																				<div class="qfy_title_image_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_image " style="padding:0 10px 0 10px;"><img class=" ag_image" src="{{ site.baseurl }}/img/Estuary.png" alt="icon_04" description="" data-attach-id="14636" data-title="icon_04" title="" src-img=""></div>
+																				</div>
+																				<div class="qfy_title_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_title" style="font-family:微软雅黑;font-size:16px;font-weight:normal;font-style:normal;color:#ffffff;padding:0 0 6px 10px;display:block;padding:0 0 6px 10px;vertical-align:bottom;">Estuary</div>
+																					<div class="header_subtitle" style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;color:#ffffff;display:block;padding:0 0 0px 10px;vertical-align:bottom;">Introduction for Estuary</div>
+																				</div>
+																				<style></style>
+																				<div class="button_wrapper" style="display:none;">
+																					<div class="button " style="display:inline-block;max-width:100%;text-align:center; font-size:14px; color:#333; padding:5px;">+ 查看更多</div>
+																				</div><span style="clear:both;"></span></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														</a>
+													</div>
+													<style class="column_class qfy_style_class">
+														@media only screen and (min-width: 992px) {
+															.qfy-column-2-5d36c98b39660539996> .column_inner {
+																padding-left: 0;
+																padding-right: 0;
+																padding-top: 0;
+																padding-bottom: 0;
+															}
+														
+														
+														}
+														
+														@media only screen and (max-width: 992px) {
+															.qfy-column-2-5d36c98b39660539996> .column_inner {
+																margin: 0 auto 0 !important;
+																min-height: 0 !important;
+																padding-left: 10px;
+																padding-right: 9px;
+																padding-top: 0;
+																padding-bottom: 0;
+															}
+													
+															.qfy-column-2-5d36c98b39660539996> .column_inner> .background-overlay,
+															.qfy-column-2-5d36c98b39660539996> .column_inner> .background-media {
+																width: 100% !important;
+																left: 0 !important;
+																right: auto !important;
+															}
+														}
+													</style>
+													
+													<div data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-duration="1" data-delay="" class=" qfy-column-3-5d36c98b3a655500292 qfy-column-inner  vc_span_class  vc_span4  text-Default small-screen-undefined column_middle notfullrow" data-dw="1/3" data-fixheight="" style="margin-top: 0px; margin-bottom: 0px;">
+														<a href="{{ site.baseurl }}/Applications">
+															<div style="min-height:120px;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;border-radius:0px;border-top:0px solid rgba(62,69,81,1);border-bottom:0px solid rgba(62,69,81,1);border-left:1px solid rgba(62,69,81,1);border-right:1px solid rgba(62,69,81,1);;position:relative;" class="column_inner ">
+															<div class=" background-overlay grid-overlay-0" style="background-color:transparent;width:100%;"></div>
+															<div class="column_containter" style="z-index:3;position:relative;">
+																<div id="vc_header_5d36c98b3ad27300" m-padding="30px 0px 0px 0px" p-padding="30px 0 0 30px" css_animation_delay="0" qfyuuid="qfy_header_urciw-c-gm" data-anitime="0.7" class="qfy-element minheigh1px qfe_text_column qfe_content_element " style="position: relative;;;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:30px;padding-bottom:0;padding-right:0;padding-left:30px;">
+																	<style>
+																		#vc_header_5d36c98b3ad27300 .qfy_title_inner,
+																		#vc_header_5d36c98b3ad27300 .qfy_title_image_inner {
+																			vertical-align: middle !important;
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b3ad27300 .header_title {
+																				font-size: 14px !important;
+																			}
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b3ad27300 .header_subtitle {
+																				font-size: 12px !important;
+																				
+																			}
+																		}
+																	</style>
+																	<div class="qfe_wrapper">
+																		<div class="qfy_title left mobileleft">
+																			<div class="qfy_title_image_warpper" style="display:inline-block;position:relative;max-width:100%;">
+																				<div class="qfy_title_image_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_image " style="padding:0 10px 0 10px;"><img class=" ag_image" src="{{ site.baseurl }}/img/disn.png" alt="icon_02" description="" data-attach-id="14634" data-title="icon_02" title="" src-img=""></div>
+																				</div>
+																				<div class="qfy_title_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_title" style="font-family:微软雅黑;font-size:16px;font-weight:normal;font-style:normal;color:#ffffff;padding:0 0 6px 10px;display:block;padding:0 0 6px 10px;vertical-align:bottom;">Applications</div>
+																					<div class="header_subtitle" style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;color:#ffffff;display:block;padding:0 0 0px 10px;vertical-align:bottom;">Reference applications</div>
+																				</div>
+																			
+																				<div class="button_wrapper" style="display:none;">
+																					<div class="button " style="display:inline-block;max-width:100%;text-align:center; font-size:14px; color:#333; padding:5px;">+ 查看更多</div>
+																				</div><span style="clear:both;"></span></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														</a>
+													</div>
+													<style class="column_class qfy_style_class">
+														@media only screen and (min-width: 992px) {
+															.qfy-column-3-5d36c98b3a655500292> .column_inner {
+																padding-left: 0;
+																padding-right: 0;
+																padding-top: 0;
+																padding-bottom: 0;
+																
+															}
+													
+															
+														}
+														
+														@media only screen and (max-width: 992px) {
+															.qfy-column-3-5d36c98b3a655500292> .column_inner {
+																margin: 0 auto 0 !important;
+																min-height: 0 !important;
+																padding-left: 10px;
+																padding-right: 6px;
+																padding-top: 0;
+																padding-bottom: 0;
+															
+															}
+													
+															.qfy-column-3-5d36c98b3a655500292> .column_inner> .background-overlay,
+															.qfy-column-3-5d36c98b3a655500292> .column_inner> .background-media {
+																width: 100% !important;
+																left: 0 !important;
+																right: auto !important;
+															}
+														}
+													</style>
+													<div data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-duration="1" data-delay="" class=" qfy-column-2-5d36c98b39660539997 qfy-column-inner  vc_span_class  vc_span4  text-Default small-screen-undefined column_middle notfullrow" data-dw="1/4" data-fixheight="" style="margin-top: 0px; margin-bottom: 0px;">
+														<a href="{{ site.baseurl }}/Distribution">
+														<div style="min-height:120px;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;border-radius:0px;border-top:0px solid rgba(62,69,81,1);border-bottom:0px solid rgba(62,69,81,1);border-left:1px solid rgba(62,69,81,1);border-right:1px solid rgba(62,69,81,1);;position:relative;" class="column_inner ">
+															<div class=" background-overlay grid-overlay-0" style="background-color:transparent;width:100%;"></div>
+															<div class="column_containter" style="z-index:3;position:relative;">
+																<div id="vc_header_5d36c98b39d69887" m-padding="30px 0px 0px 0px" p-padding="30px 0 0 30px" css_animation_delay="0" qfyuuid="qfy_header_urciw-c-7o" data-anitime="0.7" class="qfy-element minheigh1px qfe_text_column qfe_content_element " style="position: relative;;;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:30px;padding-bottom:0;padding-right:0;padding-left:30px;">
+																	<style>
+																		#vc_header_5d36c98b39d69887 .qfy_title_inner,
+																		#vc_header_5d36c98b39d69887 .qfy_title_image_inner {
+																			vertical-align: middle !important;
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b39d69887 .header_title {
+																				font-size: 14px !important;
+																			}
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b39d69887 .header_subtitle {
+																				font-size: 12px !important;
+																			}
+																		}
+																	</style>
+																	<div class="qfe_wrapper">
+																		<div class="qfy_title left mobileleft">
+																			<div class="qfy_title_image_warpper" style="display:inline-block;position:relative;max-width:100%;">
+																				<div class="qfy_title_image_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_image " style="padding:0 10px 0 10px;"><img class=" ag_image" src="{{ site.baseurl }}/img/FAQ.png" alt="icon_04" description="" data-attach-id="14636" data-title="icon_04" title="" src-img=""></div>
+																				</div>
+																				<div class="qfy_title_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_title" style="font-family:微软雅黑;font-size:16px;font-weight:normal;font-style:normal;color:#ffffff;padding:0 0 6px 10px;display:block;padding:0 0 6px 10px;vertical-align:bottom;">Distribution</div>
+																					<div class="header_subtitle" style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;color:#ffffff;display:block;padding:0 0 0px 10px;vertical-align:bottom;">Distribution deployment</div>
+																				</div>
+																				<style></style>
+																				<div class="button_wrapper" style="display:none;">
+																					<div class="button " style="display:inline-block;max-width:100%;text-align:center; font-size:14px; color:#333; padding:5px;">+ 查看更多</div>
+																				</div><span style="clear:both;"></span></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														</a>
+													</div>
+													<style class="column_class qfy_style_class">
+														@media only screen and (min-width: 992px) {
+															.qfy-column-2-5d36c98b39660539997> .column_inner {
+																padding-left: 0;
+																padding-right: 0;
+																padding-top: 0;
+																padding-bottom: 0;
+															}
+														
+														}
+														
+														@media only screen and (max-width: 992px) {
+															.qfy-column-2-5d36c98b39660539997> .column_inner {
+																margin: 0 auto 0 !important;
+																min-height: 0 !important;
+																padding-left: 10px;
+																padding-right: 9px;
+																padding-top: 0;
+																padding-bottom: 0;
+															}
+														
+															.qfy-column-2-5d36c98b39660539997> .column_inner> .background-overlay,
+															.qfy-column-2-5d36c98b39660539997> .column_inner> .background-media {
+																width: 100% !important;
+																left: 0 !important;
+																right: auto !important;
+															}
+														}
+													</style>
+													<div data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-duration="1" data-delay="" class=" qfy-column-4-5d36c98b3b564623014 qfy-column-inner  vc_span_class  vc_span4  text-Default small-screen-undefined column_middle notfullrow" data-dw="1/3" data-fixheight="" style="margin-top: 0px; margin-bottom: 0px;">
+														<a href="{{ site.baseurl }}/FAQ">
+														<div style="min-height:120px;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;border-radius:0px;border-top:0px solid rgba(62,69,81,1);border-bottom:0px solid rgba(62,69,81,1);border-left:1px solid rgba(62,69,81,1);border-right:1px solid rgba(62,69,81,1);;position:relative;" class="column_inner ">
+															<div class=" background-overlay grid-overlay-0" style="background-color:transparent;width:100%;"></div>
+															<div class="column_containter" style="z-index:3;position:relative;">
+																<div id="vc_header_5d36c98b3bc1f217" m-padding="30px 0px 0px 0px" p-padding="30px 0 0 30px" css_animation_delay="0" qfyuuid="qfy_header_urciw" data-anitime="0.7" class="qfy-element minheigh1px qfe_text_column qfe_content_element " style="position: relative;;;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:30px;padding-bottom:0;padding-right:0;padding-left:30px;">
+																	<style>
+																		#vc_header_5d36c98b3bc1f217 .qfy_title_inner,
+																		#vc_header_5d36c98b3bc1f217 .qfy_title_image_inner {
+																			vertical-align: middle !important;
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b3bc1f217 .header_title {
+																				font-size: 14px !important;
+																			}
+																		}
+																		
+																		@media only screen and (max-width: 768px) {
+																			#vc_header_5d36c98b3bc1f217 .header_subtitle {
+																				font-size: 12px !important;
+																			}
+																		}
+																	</style>
+																	<div class="qfe_wrapper">
+																		<div class="qfy_title left mobileleft">
+																			<div class="qfy_title_image_warpper" style="display:inline-block;position:relative;max-width:100%;">
+																				<div class="qfy_title_image_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_image " style="padding:0 10px 0 10px;"><img class=" ag_image" src="{{ site.baseurl }}/img/app.png" alt="icon_01" description="" data-attach-id="14633" data-title="icon_01" title="" src-img=""></div>
+																				</div>
+																				<div class="qfy_title_inner" style="display:inline-block;position:relative;max-width:100%;">
+																					<div class="header_title" style="font-family:微软雅黑;font-size:16px;font-weight:normal;font-style:normal;color:#ffffff;padding:0 0 6px 10px;display:block;padding:0 0 6px 10px;vertical-align:bottom;">FAQ</div>
+																					<div class="header_subtitle" style="font-family:微软雅黑;font-size:13px;font-weight:normal;font-style:normal;color:#ffffff;display:block;padding:0 0 0px 10px;vertical-align:bottom;">&nbsp;</div>
+																				</div>
+																		
+																				<div class="button_wrapper" style="display:none;">
+																						<div class="button " style="display:inline-block;max-width:100%;text-align:center; font-size:14px; color:#333; padding:5px;">+ 查看更多</div>
+																					</div><span style="clear:both;"></span></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														</a>
+													</div>
+													<style class="column_class qfy_style_class">
+											
+														@media only screen and (min-width: 992px) {
+															.qfy-column-4-5d36c98b3b564623014> .column_inner {
+																padding-left: 0;
+																padding-right: 0;
+																padding-top: 0;
+																padding-bottom: 0;
+															}
+														
+														
+															
+														}
+														
+														@media only screen and (max-width: 992px) {
+															.qfy-column-4-5d36c98b3b564623014> .column_inner {
+																margin: 0 auto 0 !important;
+																min-height: 0 !important;
+																padding-left: 8px;
+																padding-right: 9px;
+																padding-top: 0;
+																padding-bottom: 0;
+															}
+														
+															.qfy-column-4-5d36c98b3b564623014> .column_inner> .background-overlay,
+															.qfy-column-4-5d36c98b3b564623014> .column_inner> .background-media {
+																width: 100% !important;
+																left: 0 !important;
+																right: auto !important;
+															}
+															
+															
+														}
+													</style>
+													
+													
+													<div class="wf-mobile-hidden qfy-clumn-clear" style="clear:both;"></div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</div>
+
+
 <script>
     // Drop Bootstarp low-performance Navbar
     // Use customize navbar with high-quality material design animation
     // in high-perf jank-free CSS3 implementation
-    var $body   = document.body;
+    var $body = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
     var __HuxNav__ = {
-        close: function(){
+        close: function () {
             $navbar.className = " ";
             // wait until animation end.
-            setTimeout(function(){
+            setTimeout(function () {
                 // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
+                if ($navbar.className.indexOf('in') < 0) {
                     $collapse.style.height = "0px"
                 }
-            },400)
+            }, 400)
         },
-        open: function(){
+        open: function () {
             $collapse.style.height = "auto"
             $navbar.className += " in";
         }
     }
-
-    // Bind Event
-    $toggle.addEventListener('click', function(e){
-        if ($navbar.className.indexOf('in') > 0) {
-            __HuxNav__.close()
-        }else{
-            __HuxNav__.open()
-        }
-    })
-
-    /**
-     * Since Fastclick is used to delegate 'touchstart' globally
-     * to hack 300ms delay in iOS by performing a fake 'click',
-     * Using 'e.stopPropagation' to stop 'touchstart' event from 
-     * $toggle/$collapse will break global delegation.
-     * 
-     * Instead, we use a 'e.target' filter to prevent handler
-     * added to document close HuxNav.  
-     *
-     * Also, we use 'click' instead of 'touchstart' as compromise
-     */
-    document.addEventListener('click', function(e){
-        if(e.target == $toggle) return;
-        if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
-    })
+  
 </script>

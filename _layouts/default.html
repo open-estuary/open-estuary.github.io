@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="bit-html mobile-false js_active  vc_desktop  vc_transform  vc_transform  csstransforms csstransforms3d csstransitions no-touch" dir="ltr" lang="zh-CN">
+<body class="home page page-id-9722 page-template-default image-blur widefull_header2 widefull_footer2 btn-flat content-fullwidth qfe-js-composer js-comp-ver-4.0.1 vc_responsive is-webkit" data-pid="9722" data-pkey="e435aad236039e4a98b2baa5f7d94b65">
 {% include head.html %}
 
 <!-- hack iOS CSS :active style -->
-<body ontouchstart="">
+
 
     {% include nav.html %}
 
     {{ content }}
-
+    <div style="display: none;">
+            {% for post in site.posts %}
+            <li class="postUrl">{{post.url}}</li>
+            
+            {% endfor %} 
+            
+    </div>
+   
     {% include footer.html %}
 
 
@@ -17,6 +24,43 @@
 <img src="/img/apple-touch-icon.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
-</body>
 
+</body>
+<script>
+    var href_list = []
+    
+    $('li.postUrl').each(function(){
+        href_list.push($(this).html())        
+    })
+    // console.log(href_list)
+   
+    var title_list = []
+
+    var to_up_str_list = href_list.map(function(item,index){
+        
+
+        let split_array = item.split('/')
+        var title = split_array[split_array.length-2]
+        to_up_list = title.split('-').map(function(item2,index,title){
+           return item2 = item2.substring(0,1).toUpperCase()+item2.substring(1)
+        })
+        var to_up_str = to_up_list.join(' ')
+        return { [to_up_str]: item }
+    })
+
+    to_up_str_list.forEach(function(item3,index3){
+
+        $('[carousel-item]>div>div>a').each(function(inx,elem){
+            var title = $(this).html()
+            if(item3[title]){
+               
+                $(this).attr('href',item3[title])
+
+            }
+
+        })
+
+        })
+
+</script>
 </html>

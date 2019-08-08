@@ -1,4 +1,9 @@
-
+---
+layout:     post
+author:     Estuary
+header-img: img/post-bg-hacker.jpg
+catalog: true
+---
 # Introduction
 ---
 

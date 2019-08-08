@@ -60,7 +60,7 @@
 }
 .side-catalog.fixed {
   position: fixed;
-  top: -21px;
+  top: 80px;
 }
 .side-catalog.fold .catalog-toggle::before {
   content: "+";
@@ -119,7 +119,7 @@
 }
 .side-catalog .catalog-body .active {
   border-radius: 4px;
-  background-color: #F5F5F5;
+  background-color: #dabbbb;
 }
 .side-catalog .catalog-body .active a {
   color: #0085a1!important;
@@ -136,12 +136,12 @@ body {
      */
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 18px;
   color: #404040;
   overflow-x: hidden;
 }
 p {
-  margin: 30px 0;
+  margin: 0;
 }
 h1,
 h2,
@@ -157,16 +157,16 @@ h6 {
   line-height: 1.7;
   line-height: 1.1;
   font-weight: bold;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 h4 {
   font-size: 21px;
 }
-a {
-  color: #404040;
-}
+
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #51babb;
 }
 a img:hover,
 a img:focus {
@@ -175,15 +175,8 @@ a img:focus {
 article {
   overflow-x: hidden;
 }
-blockquote {
-  color: #808080;
-  font-style: italic;
-  font-size: 0.95em;
-  margin: 20px 0 20px;
-}
-blockquote p {
-  margin: 0;
-}
+
+
 small.img-hint {
   display: block;
   margin-top: -20px;
@@ -209,7 +202,8 @@ select.sel-lang {
 }
 .table th,
 .table td {
-  border: 1px solid #eee !important;
+  border: 1px solid #e4baba !important;
+  padding: 8px;
 }
 hr.small {
   max-width: 100px;
@@ -229,6 +223,7 @@ pre code {
 }
 .postlist-container {
   margin-bottom: 15px;
+  margin-right: 50px;
 }
 .post-container a {
   color: #337ab7;
@@ -625,7 +620,7 @@ pre code {
   font-weight: 300;
   margin-bottom: 10px;
 }
-.post-preview > .post-meta {
+.post-meta {
   font-family: 'Lora', 'Times New Roman', serif;
   color: #808080;
   font-size: 16px;
@@ -652,6 +647,7 @@ pre code {
   }
   .post-preview .post-meta {
     font-size: 18px;
+    text-align: right;
   }
 }
 .post-content-preview {
