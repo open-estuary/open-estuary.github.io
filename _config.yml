@@ -54,7 +54,7 @@ gitalk:
   clientSecret: 7e3609ea29ebeaad2608fed9dcd19096c6d8b221    #生成的clientSecret
   repo: open-estuary.github.io    #仓库名称
   owner: open-estuary    #github用户名
-  admin: ['open-estuary','simon28li','darmac']
+  admin: 'darmac'
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
