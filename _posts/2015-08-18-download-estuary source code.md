@@ -21,5 +21,5 @@ you can just do following step if you are updating the latest version.
 <pre>Estuary             : git clone <a href="https://github.com/open-estuary/estuary" target="_blank">https://github.com/open-estuary/estuary.git
 </a>Distro-repo         : git clone <a href="https://github.com/open-estuary/distro-repo" target="_blank">https://github.com/open-estuary/distro-repo.git</a>
 Linux Kernel        : git clone <a href="https://github.com/open-estuary/kernel" target="_blank">https://github.com/open-estuary/kernel.git </a></pre>
-More detail information about system setup, please refer to <a href="https://open-estuary.github.io/2018/10/04/estuary-user-manual/" target="_blank">Estuary User Manual</a>.
-Overview introduction to this project, please refer to <a href="https://open-estuary.github.io/2018/12/26/estuary-overview/" target="_blank">Estuary Overview</a>.
+More detail information about system setup, please refer to <a href="https://open-estuary.github.io/2019/07/06/estuary-user-manual/" target="_blank">Estuary User Manual</a>.
+Overview introduction to this project, please refer to <a href="https://open-estuary.github.io/2017/12/12/estuary-overview/" target="_blank">Estuary Overview</a>.

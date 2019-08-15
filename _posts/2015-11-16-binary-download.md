@@ -30,5 +30,5 @@ All released binary files and the corresponding documents are placed in <span
 _From China (better speed): _
 <pre>wget -c ftp://117.78.41.188/utils/toolchain/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux.tar.xz
 </pre>
-More detail information about system setup, please refer to <span style="color: #008000;">[Estuary User Manual](https://open-estuary.github.io/2015/08/24/estuary-user-manual/).</span>
+More detail information about system setup, please refer to <span style="color: #008000;">[Estuary User Manual](https://open-estuary.github.io/2019/07/06/estuary-user-manual/).</span>
 Overview introduction to this project, please refer to <span style="color: #008000;">[Estuary Overview](https://open-estuary.github.io/2017/12/12/estuary-overview/)</span>.

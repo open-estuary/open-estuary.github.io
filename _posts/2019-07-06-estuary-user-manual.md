@@ -12,7 +12,7 @@ it will help you to make your Estuary Environment setup from ZERO.
 
 All following sections will take the D05 board as example, other boards have the similar steps to do, 
 for more detail difference between them, please refer to 
-[Hardware Boards](https://open-estuary.github.io/tags/#Hardware%20Boards) sections in this website.
+[Hardware Boards](https://open-estuary.github.io/Tags/#Hardware%20Boards) sections in this website.
 
 ---
 
@@ -49,8 +49,8 @@ and build the whole project.
 Anyway, before booting up system, all binaries should be available firstly.
 
 packages:
-[appliaction](http://203.160.91.226:18083/repodata/releases/5.0/) 
-[kernel](http://203.160.91.226:18083/repodata/releases/5.2/)
+[appliaction](ftp://117.78.41.188/estuary-repo/app/) 
+[kernel](ftp://117.78.41.188/estuary-repo/kernel)
 
 You can get them yourself via above link.
 

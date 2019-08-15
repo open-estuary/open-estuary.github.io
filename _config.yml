@@ -50,12 +50,19 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 5fa2f8e4af96076ab8ea                            #生成的clientID
-  clientSecret: ec17c91f2c22c8359a839924998d39f5e757d9b6    #生成的clientSecret
+  clientID: 5fa2f8e4af96076ab8ea                             #生成的clientID
+  clientSecret: ec17c91f2c22c8359a839924998d39f5e757d9b6     #生成的clientSecret
   repo: open-estuary.github.io    #仓库名称
   owner: open-estuary    #github用户名
-  admin: simon28li
+  admin: open-estuary darmac simon28li
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  # enable: true    #是否开启Gitalk评论
+  # clientID: 0d20a6751429800a4679                            #生成的clientID
+  # clientSecret: 0ded0bab5c1a0f51c5b96d57c2cb040c892a064c        #生成的clientSecret
+  # repo: simon28li.github.io    #仓库名称
+  # owner: simon28li    #github用户名
+  # admin: simon28li darmac open-estuary
+  # distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
