@@ -4,7 +4,7 @@ layout: default
 
 <!-- Post Content -->
 
-    <div class="layui-fluid" style="margin:100px 0px;">
+    <div class="layui-fluid" style="margin-top:100px;overflow: auto;">
         <div class="layui-row">
 
     <!-- Post Container -->
@@ -13,29 +13,33 @@ layout: default
 
 				{{ content }}
 
-                <hr style="visibility: hidden;">
+            
                 <br>
-                <div class="layui-col-lg12">
+                <div class="layui-col-lg12 layui-col-md12  layui-col-sm12 layui-col-xs12" style="margin-bottom: 10px;">
                     {% if page.previous.url %}
-                    <button type="button"  class="layui-btn layui-btn-primary" style="display: block;width:45%;height:120px;float:left;font-size: 18px;font-weight: 900;white-space: inherit;">
+                    <button  type="button"  class="layui-btn layui-btn-primary" style="display: block;width:45%;height:120px;float:left;font-size: 18px;font-weight: 900;white-space: inherit;">
                         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
                             <div style="height: 30px;">Previous</div>
-                            <div >{{page.previous.title}}</div>
+                            <div >{{page.previous.title | truncate:15 }}</div>
                         </a>
                     </button>
                     {% endif %}
                     {% if page.next.url %}
                     <button type="button"  class="layui-btn layui-btn-primary" style="display: block;width:45%;height:120px;float: right;font-size: 18px;font-weight: 900;white-space: inherit;">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+                        <a   href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
                             <div style="height: 30px;">Next</div>
-                            <div >{{page.next.title}}</div>
+                            <div >{{page.next.title | truncate:15 }}</div>
                         </a>
                     </button>
                     {% endif %}
                 </div>           
-
+            </br>
                 <!--Gitalk评论start  -->
-                {% if site.gitalk.enable %}
+                
+                {% if site.gitalk.enable and page.url contains '/estuary-overview/' %}
+                </br>
+                <div id="disscuss_zone" class="layui-col-lg12 layui-col-md12  layui-col-sm12 layui-col-xs12">               
+              
                 <!-- 引入Gitalk评论插件  -->
                 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
                 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
@@ -44,17 +48,23 @@ layout: default
                 <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
                 <script src="{{ site.baseurl }}/js/md5.min.js"></script>
                 <script type="text/javascript">
+                    var admin = '{{site.gitalk.admin}}'
+                    admin = admin.split(' ')
                     var gitalk = new Gitalk({
                     clientID: '{{site.gitalk.clientID}}',
                     clientSecret: '{{site.gitalk.clientSecret}}',
                     repo: '{{site.gitalk.repo}}',
                     owner: '{{site.gitalk.owner}}',
-                    admin: ['{{site.gitalk.admin}}'],
-                    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+                    admin: admin,
+                    distractionFreeMode: '{{site.gitalk.distractionFreeMode}}',
                     id: md5(location.pathname),
+                    
                     });
+                    
+
                     gitalk.render('gitalk-container');
                 </script>
+                </div>
                 {% endif %}
                 <!-- Gitalk end -->
 
