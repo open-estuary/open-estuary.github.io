@@ -5,13 +5,14 @@ layout: default
 
 
 <!-- Main Content -->
-<div class="layui-fluid" style="margin: 100px 0px;">
+<div class="layui-fluid" style="margin-top: 100px;overflow: auto;">
 	<div class="layui-row">
         {% if site.sidebar == false %}
 <!-- NO SIDEBAR -->
     <!-- PostList Container -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
                 {{ content }}
+                
             </div>
     <!-- Sidebar Container -->
             <div class="
@@ -58,10 +59,17 @@ layout: default
     			{{ content }}
     		</div>
     <!-- Sidebar Container -->
-            <div style="margin-top: 50px;margin-left: 50px;" class=" layui-col-lg2 layui-col-md2 layui-col-md-offset layui-col-lg-offset layui-col-sm12 layui-xs12
+            <div  class=" layui-col-lg2 layui-col-md2 layui-col-md-offset layui-col-lg-offset layui-col-sm12 layui-xs12
                 
                 sidebar-container
             ">
+            <style>
+                @media only screen and (min-width: 992px) {
+                    .sidebar-container{
+                        margin-top: 50px;margin-left: 50px;
+                    }
+                }
+            </style>
                 <!-- Featured Tags -->
                 {% if site.featured-tags %}
                 <section>
@@ -185,3 +193,4 @@ layout: default
         {% endif %}
 	</div>
 </div>
+
