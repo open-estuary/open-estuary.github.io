@@ -26,8 +26,8 @@ $ sudo ./build.sh --build_dir=./workspace
 <p class="disqus"> To try more different build on estuary, please get help information about build.sh as follow:</p>
 
 <pre>$ ./build.sh -h</pre>
-More detail user guide about this project, please refer to <span style="color: #008000;"><a style="color: #008000;" href="https://open-estuary.github.io/2015/08/24/estuary-user-manual/">Estuary User Manual</a></span>.
+More detail user guide about this project, please refer to <span style="color: #008000;"><a style="color: #008000;" href="https://open-estuary.github.io/2019/07/06/estuary-user-manual/">Estuary User Manual</a></span>.
 
-If you just want to quickly try it with binaries, please refer to our binary <strong>Download Page </strong>to get the latest binaries and documentations for each corresponding boards.
+If you just want to quickly try it with binaries, please refer to our binary <a href="https://open-estuary.github.io/2015/11/16/binary-download/" target="_blank"><strong>Download Page </strong></a>to get the latest binaries and documentations for each corresponding boards.
 
 Accessing from China: <span id="im-content_1471420632351" class="im-content"><a href="ftp://117.78.41.188/releases">ftp://117.78.41.188</a></span>
