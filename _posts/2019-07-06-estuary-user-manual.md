@@ -40,7 +40,7 @@ You can refer to [getting started](https://open-estuary.github.io/2015/09/08/get
 and build the whole project.
 
 *For more detail release notes, please refer to the 
-[Release Lists](https://open-estuary.github.io/2019/06/29/releases/)*
+[Release Lists](https://open-estuary.github.io/2019/07/25/releases/)*
 
 ---
 
