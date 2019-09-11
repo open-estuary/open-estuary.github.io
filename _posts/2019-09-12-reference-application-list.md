@@ -101,3 +101,14 @@ Currently the following packages are supported by Open-Estuary repo:
 |lamp|5.10|NULL|Y|Y|[N/A]( )|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/lamp.sh)|[N/A]( )|
 |qemu|5.10|2.12.0|Y||[src](https://github.com/qemu/QEMU)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/qemu.sh)|[N/A]( )|
 |qemu|5.10|2.8.1||Y|[src](https://github.com/qemu/QEMU)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/qemu.sh)|[N/A]( )|
+|flume|5.30|1.8.0|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|hbase|5.30|1.3.2|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|hdfs|5.30|2.8.5|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|hive|5.30|2.3.3|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|mapreduce|5.30|2.8.5|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|solr|5.30|6.6.0|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|spark|5.30|2.2.3|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|zookeeper|5.30|3.4.6|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|kafka|5.30|0.10.2.2|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|flink|5.30|1.6.4|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|sqoop|5.30|1.4.6|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
