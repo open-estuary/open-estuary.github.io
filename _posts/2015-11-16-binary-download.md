@@ -21,8 +21,6 @@ Accessing from **China**: **<span id="im-content_1471420632351" class="im-conten
 
 _ From China :_
 <pre>
-Toolchain for ARM32: 
-  wget -c ftp://117.78.41.188/utils/toolchain/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
 Toolchain for ARM64: 
   wget -c ftp://117.78.41.188/utils/toolchain/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu.tar.xz
 </pre>
