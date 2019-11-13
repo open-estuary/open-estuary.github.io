@@ -26,7 +26,7 @@ The most key goal of Estuary project is to support, enable and speed up the ma
 &nbsp;
 <h2>Architecture Overview:</h2>
 <p class="disqus">The high level view for Estuary is as given below:</p>
-<p class="disqus"><img class="aligncenter size-large wp-image-1562" src="https://code.huawei.com/Open-Estuary-OS/Open-Estuary-Basic-Info/blob/master/Materials/Estuary-Overview.JPG" alt="arch" width="1024" height="600" /></p>
+<p class="disqus"><img class="aligncenter size-large wp-image-1562" src="https://raw.githubusercontent.com/open-estuary/open-estuary.github.io/master/img/arch1-1024x600.png" alt="arch" width="1024" height="600" /></p>
 
 <h2>Estuary Provides:</h2>
 <ol class="disqus">
