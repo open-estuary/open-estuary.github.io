@@ -49,7 +49,6 @@ Currently the following packages are supported by Open-Estuary repo:
 |Python|5.2|2.7.13||Y|[src](https://github.com/python/cpython)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/python.sh)|[N/A]( )|
 |Node.js|5.2|6.16.0|Y||[src](https://github.com/nodejs/node)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/nodejs.sh)|[N/A]( )|
 |Node.js|5.2|8.16.0||Y|[src](https://github.com/nodejs/node)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/nodejs.sh)|[N/A]( )|
-|Malluma|5.2|2.0||Y|[N/A]( )|[N/A]( )|[rpm](ftp://117.78.41.188/estuary-repo/kernel/centos/aarch64/Malluma-2.0-1.aarch64.rpm)|
 |busybox|5.2|1.22.0|Y|Y|[src](https://busybox.net/downloads/)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/busybox.sh)|[N/A]( )|
 |workload-automation|5.2|3.0.0|Y|Y|[src](https://github.com/ARM-software/workload-automation)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/workload-automation.sh)|[N/A]( )|
 |httperf|5.2|0.9.0|Y|Y|[src](https://github.com/httperf/httperf)|[script](https://github.com/open-estuary/estuary-app/blob/master/app_install_scripts/httperf.sh)|[N/A]( )|
@@ -112,3 +111,4 @@ Currently the following packages are supported by Open-Estuary repo:
 |kafka|5.30|0.10.2.2|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
 |flink|5.30|1.6.4|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
 |sqoop|5.30|1.4.6|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
+|malluma|5.30|1.3.10|Y|Y|N/A|N/A|[RPM](ftp://117.78.41.188/estuary-repo/app/centos/aarch64/malluma-release-1.3.10-1.aarch64.rpm) [DEB](ftp://117.78.41.188/estuary-repo/app/debian/pool/main/malluma-release-1.3.10-1_all.deb)
