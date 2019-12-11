@@ -111,4 +111,3 @@ Currently the following packages are supported by Open-Estuary repo:
 |kafka|5.30|0.10.2.2|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
 |flink|5.30|1.6.4|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
 |sqoop|5.30|1.4.6|Y|Y|bigtop1.4|[N/A]( )|[N/A]( )
-|malluma|5.30|1.3.10|Y|Y|N/A|N/A|[RPM](ftp://117.78.41.188/estuary-repo/app/centos/aarch64/malluma-release-1.3.10-1.aarch64.rpm) [DEB](ftp://117.78.41.188/estuary-repo/app/debian/pool/main/malluma-release-1.3.10-1_all.deb)
